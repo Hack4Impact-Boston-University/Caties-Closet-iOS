@@ -12,7 +12,7 @@ https://www.raywenderlich.com/1073-model-view-controller-mvc-in-ios-a-modern-app
 # Our GitHub Workflow
 We'll talk more about this on 2/25 - https://docs.google.com/document/d/1L2wmFzisS3M5rWG1ArYTuIN1JXhdX-_uNOlyrUbyKsM/edit
 
-#M ac Users Set Up Guide
+# Mac Users Set Up Guide
 Download here - https://developer.apple.com/xcode/
 
 # Windows Users Set Up Guide
