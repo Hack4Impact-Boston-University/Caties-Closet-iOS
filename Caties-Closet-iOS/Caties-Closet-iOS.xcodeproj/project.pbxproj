@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B38757222D9D2500177BE2 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B38756222D9D2400177BE2 /* download.png */; };
 		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
 		53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B63222472C500F58E05 /* ViewControllerLogin.swift */; };
 		53208B67222472C500F58E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B65222472C500F58E05 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48B38756222D9D2400177BE2 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = ../../../../../Desktop/download.png; sourceTree = "<group>"; };
 		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53208B61222472C500F58E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53208B63222472C500F58E05 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				53208B61222472C500F58E05 /* AppDelegate.swift */,
 				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
 				53208B65222472C500F58E05 /* Main.storyboard */,
+				48B38756222D9D2400177BE2 /* download.png */,
 				53208B68222472C700F58E05 /* Assets.xcassets */,
 				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
 				53208B6D222472C700F58E05 /* Info.plist */,
@@ -134,6 +137,7 @@
 				53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */,
 				53208B69222472C700F58E05 /* Assets.xcassets in Resources */,
 				53208B67222472C500F58E05 /* Main.storyboard in Resources */,
+				48B38757222D9D2500177BE2 /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
