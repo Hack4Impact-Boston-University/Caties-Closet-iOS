@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D89F4042231FA030094A054 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D89F4032231FA030094A054 /* ImageCollectionViewCell.swift */; };
 		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
 		53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B63222472C500F58E05 /* ViewControllerLogin.swift */; };
 		53208B67222472C500F58E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B65222472C500F58E05 /* Main.storyboard */; };
 		53208B69222472C700F58E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53208B68222472C700F58E05 /* Assets.xcassets */; };
 		53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B6A222472C700F58E05 /* LaunchScreen.storyboard */; };
-		53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7522247B6500F58E05 /* ViewControllerHome.swift */; };
+		53208B7622247B6500F58E05 /* ViewControllerDonate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7522247B6500F58E05 /* ViewControllerDonate.swift */; };
 		53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7722247B9900F58E05 /* ViewControllerProfile.swift */; };
 		53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D89F4032231FA030094A054 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53208B61222472C500F58E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53208B63222472C500F58E05 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
@@ -25,7 +27,7 @@
 		53208B68222472C700F58E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53208B6B222472C700F58E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53208B6D222472C700F58E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53208B7522247B6500F58E05 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		53208B7522247B6500F58E05 /* ViewControllerDonate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDonate.swift; sourceTree = "<group>"; };
 		53208B7722247B9900F58E05 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
 		53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +43,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D89F3FB22316CCD0094A054 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0D89F3FC22316CD70094A054 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				53208B7722247B9900F58E05 /* ViewControllerProfile.swift */,
+				0D89F4032231FA030094A054 /* ImageCollectionViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0D89F3FD22316CE50094A054 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		0D89F3FE22316CF30094A054 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				53208B7522247B6500F58E05 /* ViewControllerDonate.swift */,
+			);
+			path = Donate;
+			sourceTree = "<group>";
+		};
 		53208B55222472C500F58E05 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +94,16 @@
 		53208B60222472C500F58E05 /* Caties-Closet-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0D89F3FE22316CF30094A054 /* Donate */,
+				0D89F3FD22316CE50094A054 /* AboutUs */,
+				0D89F3FC22316CD70094A054 /* Profile */,
+				0D89F3FB22316CCD0094A054 /* Authentication */,
 				53208B61222472C500F58E05 /* AppDelegate.swift */,
 				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
 				53208B65222472C500F58E05 /* Main.storyboard */,
 				53208B68222472C700F58E05 /* Assets.xcassets */,
 				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
 				53208B6D222472C700F58E05 /* Info.plist */,
-				53208B7522247B6500F58E05 /* ViewControllerHome.swift */,
-				53208B7722247B9900F58E05 /* ViewControllerProfile.swift */,
-				53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */,
 			);
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
@@ -144,9 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D89F4042231FA030094A054 /* ImageCollectionViewCell.swift in Sources */,
 				53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */,
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
-				53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */,
+				53208B7622247B6500F58E05 /* ViewControllerDonate.swift in Sources */,
 				53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */,
 				53208B62222472C500F58E05 /* AppDelegate.swift in Sources */,
 			);
