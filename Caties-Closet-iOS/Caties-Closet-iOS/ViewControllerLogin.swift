@@ -79,9 +79,9 @@ class ViewControllerLogin: UIViewController {
     
     // Display error messages.
     func displayAlert(message: String) {
-        let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertController.Style.alert)
         // Might be a good idea to attach handler
-        let defaultAction:UIAlertAction = UIAlertAction(title:"OK", style: UIAlertActionStyle.default, handler:nil)
+        let defaultAction:UIAlertAction = UIAlertAction(title:"OK", style: UIAlertAction.Style.default, handler:nil)
         alert.addAction(defaultAction)
         self.present(alert,animated:true, completion:nil)
     }
