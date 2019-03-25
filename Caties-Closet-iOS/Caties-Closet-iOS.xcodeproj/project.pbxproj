@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48B38757222D9D2500177BE2 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B38756222D9D2400177BE2 /* download.png */; };
+		481BE896223FFA9A006042F9 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 481BE895223FFA99006042F9 /* download.png */; };
+		481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */; };
+		481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */; };
+		481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */; };
+		481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */; };
+		481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */; };
 		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
 		53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B63222472C500F58E05 /* ViewControllerLogin.swift */; };
 		53208B67222472C500F58E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B65222472C500F58E05 /* Main.storyboard */; };
@@ -19,7 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48B38756222D9D2400177BE2 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = ../../../../../Desktop/download.png; sourceTree = "<group>"; };
+		481BE895223FFA99006042F9 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = "../../../../../Desktop/Caties-Closet-iOS/Caties-Closet-iOS/download.png"; sourceTree = "<group>"; };
+		481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVolunteerFAQ.swift; sourceTree = "<group>"; };
+		481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKRadioButtonsController.swift; sourceTree = "<group>"; };
+		481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKRadioButtonsController.swift; sourceTree = "<group>"; };
+		481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDonate.swift; sourceTree = "<group>"; };
+		481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableQuestions.swift; sourceTree = "<group>"; };
 		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53208B61222472C500F58E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53208B63222472C500F58E05 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
@@ -72,6 +82,12 @@
 				53208B7522247B6500F58E05 /* ViewControllerHome.swift */,
 				53208B7722247B9900F58E05 /* ViewControllerProfile.swift */,
 				53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */,
+				481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */,
+				481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */,
+				481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */,
+				481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */,
+				481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */,
+				481BE895223FFA99006042F9 /* download.png */,
 			);
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
@@ -137,7 +153,7 @@
 				53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */,
 				53208B69222472C700F58E05 /* Assets.xcassets in Resources */,
 				53208B67222472C500F58E05 /* Main.storyboard in Resources */,
-				48B38757222D9D2500177BE2 /* download.png in Resources */,
+				481BE896223FFA9A006042F9 /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */,
+				481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */,
 				53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */,
+				481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */,
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
+				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,
+				481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */,
 				53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */,
 				53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */,
 				53208B62222472C500F58E05 /* AppDelegate.swift in Sources */,
@@ -229,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -284,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -299,7 +320,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZP5LN9Y3;
 				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.product.Caties-Closet-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +339,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SZP5LN9Y3;
 				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.product.Caties-Closet-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
