@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "8fee559cf594e1a6ad0f5ed21cee27fd"
+build_time: [1552015893, 709746000]
+inputs:
+  "/Users/Juan/Projects/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/Profile/ImageCollectionViewCell.swift": [1552010794, 0]
+  "/Users/Juan/Projects/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/ViewControllerLogin.swift": [1551971374, 0]
+  "/Users/Juan/Projects/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/AboutUs/ViewControllerAboutUs.swift": [1551971374, 0]
+  "/Users/Juan/Projects/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/Donate/ViewControllerDonate.swift": [1551971599, 0]
+  "/Users/Juan/Projects/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/Profile/ViewControllerProfile.swift": [1552015892, 0]
+  "/Users/Juan/Projects/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/AppDelegate.swift": [1551971374, 0]
