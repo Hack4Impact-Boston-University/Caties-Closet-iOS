@@ -147,25 +147,153 @@
             <objects>
                 <viewController id="BfA-5T-Xwi" customClass="ViewControllerAboutUs" customModule="Caties_Closet_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ug5-Pa-3K8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-Tf-GXB">
-                                <rect key="frame" x="149" y="323" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-2i-Ah3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1431"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLy-DT-dUg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutUs" translatesAutoresizingMaskIntoConstraints="NO" id="GEP-kw-vxW">
+                                                <rect key="frame" x="49" y="136" width="275" height="211"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutUsFirst" translatesAutoresizingMaskIntoConstraints="NO" id="izO-zj-ZVu">
+                                                <rect key="frame" x="126" y="592" width="123" height="106"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="FIRST" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nOQ-q5-BzR">
+                                                <rect key="frame" x="113" y="558" width="153" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nJ7-9y-Em5">
+                                                <rect key="frame" x="0.0" y="387" width="375" height="141"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Since 2010 we've reduced absenteeism, urged kids back into their schools and off the streets and increased graduation rates.
+We're proof compassion can change the world.
+</string>
+                                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-tN-2QO">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ABOUT US" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rrc-99-29r">
+                                                <rect key="frame" x="265" y="74" width="110" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="ZYM-jz-G5N"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="An unused room within a school is converted into a &quot;Catie's Closet&quot; as a permanent resource for at-need students." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tmJ-rg-taS">
+                                        <rect key="frame" x="6" y="701" width="369" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutUsSecond" translatesAutoresizingMaskIntoConstraints="NO" id="HEC-Ep-Q96">
+                                        <rect key="frame" x="144" y="817" width="86" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="SECOND" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fHJ-XS-QdO">
+                                        <rect key="frame" x="88" y="780" width="199" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Children are given access to the &quot;Closet,&quot; in a discreet manner, by trusted faculty members." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zUS-bR-UVU">
+                                        <rect key="frame" x="0.0" y="895" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutUsThird" translatesAutoresizingMaskIntoConstraints="NO" id="rMe-62-th9">
+                                        <rect key="frame" x="132" y="982" width="111" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="THIRD" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9vv-AQ-E4P">
+                                        <rect key="frame" x="88" y="955" width="199" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Students are allowed to take a change of clothes, toiletries to wash up, and/or gather a week's worth of clothing." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cov-E4-MjS">
+                                        <rect key="frame" x="0.0" y="1077" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="FOURTH" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ITN-dU-1jR">
+                                        <rect key="frame" x="87" y="1158" width="199" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutUsFourth" translatesAutoresizingMaskIntoConstraints="NO" id="pjg-fS-C1c">
+                                        <rect key="frame" x="132" y="1187" width="109" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The &quot;Closet&quot; is restocked with donated clothing, climate and age-appropriate, on a regular basis." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c1P-b1-RNB">
+                                        <rect key="frame" x="2" y="1286" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zLy-DT-dUg" secondAttribute="bottom" id="0H7-a3-DJo"/>
+                                    <constraint firstAttribute="trailing" secondItem="zLy-DT-dUg" secondAttribute="trailing" id="NnP-gi-QY8"/>
+                                    <constraint firstItem="zLy-DT-dUg" firstAttribute="top" secondItem="NZG-2i-Ah3" secondAttribute="top" id="dlG-4R-9S7"/>
+                                    <constraint firstItem="zLy-DT-dUg" firstAttribute="leading" secondItem="NZG-2i-Ah3" secondAttribute="leading" id="lWh-hh-f6c"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3vI-yt-g39" firstAttribute="trailing" secondItem="NZG-2i-Ah3" secondAttribute="trailing" id="0S8-Tq-8y7"/>
+                            <constraint firstItem="3vI-yt-g39" firstAttribute="bottom" secondItem="NZG-2i-Ah3" secondAttribute="bottom" id="8HQ-jG-mCn"/>
+                            <constraint firstItem="NZG-2i-Ah3" firstAttribute="leading" secondItem="3vI-yt-g39" secondAttribute="leading" id="PIr-8k-Z65"/>
+                            <constraint firstItem="zLy-DT-dUg" firstAttribute="width" secondItem="ug5-Pa-3K8" secondAttribute="width" id="PKk-0D-y5s"/>
+                            <constraint firstItem="NZG-2i-Ah3" firstAttribute="top" secondItem="3vI-yt-g39" secondAttribute="top" id="bm6-1h-tHQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3vI-yt-g39"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" id="cy5-m4-lA8"/>
+                    <size key="freeformSize" width="375" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9c-Do-9Fk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4415" y="141"/>
+            <point key="canvasLocation" x="4413.6000000000004" y="139.43028485757122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n2m-Js-ibz">
@@ -377,4 +505,12 @@
         <segue reference="5ns-aA-et0"/>
         <segue reference="NPQ-UH-IrQ"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="aboutUs" width="153" height="135"/>
+        <image name="aboutUsFirst" width="648" height="549"/>
+        <image name="aboutUsFourth" width="245" height="253"/>
+        <image name="aboutUsSecond" width="547" height="500"/>
+        <image name="aboutUsThird" width="417" height="343"/>
+        <image name="logo" width="202" height="79"/>
+    </resources>
 </document>
