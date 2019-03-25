@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tg7-rm-rro">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tg7-rm-rro">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -157,16 +157,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aW-kx-yQi">
-                                <rect key="frame" x="130" y="390" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="JOIN OUR TEAM"/>
-                                <connections>
-                                    <segue destination="eiZ-m3-YJ5" kind="showDetail" id="b0d-4a-T4i"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-2i-Ah3">
-                                <rect key="frame" x="0.0" y="20" width="375" height="1431"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="1480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLy-DT-dUg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
@@ -188,7 +180,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nJ7-9y-Em5">
-                                                <rect key="frame" x="0.0" y="387" width="375" height="141"/>
+                                                <rect key="frame" x="0.0" y="367" width="375" height="141"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Since 2010 we've reduced absenteeism, urged kids back into their schools and off the streets and increased graduation rates.
@@ -210,6 +202,19 @@ We're proof compassion can change the world.
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-r8-BGG">
+                                                <rect key="frame" x="82" y="504" width="209" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.3902300353" green="0.74572943650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="JOIN OUR TEAM!">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="eiZ-m3-YJ5" kind="showDetail" id="4bt-1L-VJx"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -405,6 +410,14 @@ We're proof compassion can change the world.
                                     <segue destination="R1H-h9-TGl" kind="presentation" id="GVc-84-0cr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKw-Cb-fdC">
+                                <rect key="frame" x="167" y="534" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="K2S-kp-mUw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bho-7L-eHP"/>
@@ -482,6 +495,14 @@ We're proof compassion can change the world.
                                 <color key="textColor" red="0.23125212010000001" green="0.48152926730000001" blue="0.97937817260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix0-Sk-J2U">
+                                <rect key="frame" x="167" y="478" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="T7N-YD-Cva"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LJO-gX-7We"/>
@@ -625,6 +646,14 @@ Anyone over the age of 13!
                                     <segue destination="Ec0-vt-rRE" kind="showDetail" id="1yS-bt-8a6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnc-XI-NP2">
+                                <rect key="frame" x="168" y="612" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="BfA-5T-Xwi" kind="showDetail" id="UDT-70-kQr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7zT-IF-r9Z"/>
@@ -757,11 +786,19 @@ Anyone over the age of 13!
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-3U-jop">
-                                <rect key="frame" x="149" y="235" width="60" height="30"/>
+                                <rect key="frame" x="157" y="237" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="DONATE"/>
                                 <connections>
                                     <segue destination="Xe6-3y-j7g" kind="showDetail" id="CWC-o3-MIX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOU-XR-Ovw">
+                                <rect key="frame" x="167" y="275" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="R1H-h9-TGl" kind="showDetail" id="3p5-ib-gT9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1486,22 +1523,20 @@ Anyone over the age of 13!
         </scene>
     </scenes>
     <resources>
-        <image name="download.png" width="730" height="226"/>
-    </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ASp-lc-jjh"/>
-        <segue reference="PDA-VX-xCB"/>
-    </inferredMetricsTieBreakers>
-    <inferredMetricsTieBreakers>
-        <segue reference="5ns-aA-et0"/>
-        <segue reference="NPQ-UH-IrQ"/>
-    </inferredMetricsTieBreakers>
-    <resources>
         <image name="aboutUs" width="153" height="135"/>
         <image name="aboutUsFirst" width="648" height="549"/>
         <image name="aboutUsFourth" width="245" height="253"/>
         <image name="aboutUsSecond" width="547" height="500"/>
         <image name="aboutUsThird" width="417" height="343"/>
+        <image name="download.png" width="730" height="226"/>
         <image name="logo" width="202" height="79"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ASp-lc-jjh"/>
+        <segue reference="4bt-1L-VJx"/>
+        <segue reference="GVc-84-0cr"/>
+        <segue reference="b0P-lj-F9j"/>
+        <segue reference="UDT-70-kQr"/>
+        <segue reference="K2S-kp-mUw"/>
+    </inferredMetricsTieBreakers>
 </document>
