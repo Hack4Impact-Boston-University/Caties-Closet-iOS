@@ -20,6 +20,8 @@
 		53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7522247B6500F58E05 /* ViewControllerHome.swift */; };
 		53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7722247B9900F58E05 /* ViewControllerProfile.swift */; };
 		53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */; };
+		569C5A6222515025007D22A8 /* ViewControllerDonationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C5A6122515025007D22A8 /* ViewControllerDonationItems.swift */; };
+		569C5A64225152E6007D22A8 /* GMStepperExampleTests in Resources */ = {isa = PBXBuildFile; fileRef = 569C5A63225152E6007D22A8 /* GMStepperExampleTests */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		53208B7522247B6500F58E05 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 		53208B7722247B9900F58E05 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
 		53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
+		569C5A6122515025007D22A8 /* ViewControllerDonationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDonationItems.swift; sourceTree = "<group>"; };
+		569C5A63225152E6007D22A8 /* GMStepperExampleTests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GMStepperExampleTests; path = "../../../../Downloads/GMStepper-master/GMStepperExample/GMStepperExampleTests"; sourceTree = "<group>"; };
+		569C5A6622515333007D22A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569C5A6722515333007D22A8 /* GMStepperExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMStepperExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		53208B55222472C500F58E05 = {
 			isa = PBXGroup;
 			children = (
+				569C5A6522515333007D22A8 /* GMStepperExampleTests */,
 				53208B60222472C500F58E05 /* Caties-Closet-iOS */,
 				53208B5F222472C500F58E05 /* Products */,
 			);
@@ -70,6 +77,7 @@
 		53208B60222472C500F58E05 /* Caties-Closet-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				569C5A63225152E6007D22A8 /* GMStepperExampleTests */,
 				53208B61222472C500F58E05 /* AppDelegate.swift */,
 				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
 				53208B65222472C500F58E05 /* Main.storyboard */,
@@ -84,8 +92,18 @@
 				481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */,
 				481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */,
 				481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */,
+				569C5A6122515025007D22A8 /* ViewControllerDonationItems.swift */,
 			);
 			path = "Caties-Closet-iOS";
+			sourceTree = "<group>";
+		};
+		569C5A6522515333007D22A8 /* GMStepperExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				569C5A6622515333007D22A8 /* Info.plist */,
+				569C5A6722515333007D22A8 /* GMStepperExampleTests.swift */,
+			);
+			path = GMStepperExampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +167,7 @@
 				53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */,
 				53208B69222472C700F58E05 /* Assets.xcassets in Resources */,
 				53208B67222472C500F58E05 /* Main.storyboard in Resources */,
+				569C5A64225152E6007D22A8 /* GMStepperExampleTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +185,7 @@
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
 				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,
 				481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */,
+				569C5A6222515025007D22A8 /* ViewControllerDonationItems.swift in Sources */,
 				53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */,
 				53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */,
 				53208B62222472C500F58E05 /* AppDelegate.swift in Sources */,

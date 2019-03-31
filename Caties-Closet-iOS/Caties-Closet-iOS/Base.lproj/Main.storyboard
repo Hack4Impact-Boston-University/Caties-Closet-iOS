@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tg7-rm-rro">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EhH-dZ-OEW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,7 +28,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goToSignUpPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ub2-Cs-hTH"/>
-                                    <segue destination="R7c-Ya-YyV" kind="presentation" id="r4R-bQ-lVd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSj-aU-JyL">
@@ -41,7 +40,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goToLoginPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLV-Ja-j8T"/>
-                                    <segue destination="83R-V9-iuM" kind="presentation" id="NPQ-UH-IrQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEg-kd-N4q">
@@ -78,7 +76,6 @@
                                 <state key="normal" title="log in"/>
                                 <connections>
                                     <action selector="goToLoginPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKe-rc-Z3O"/>
-                                    <segue destination="83R-V9-iuM" kind="presentation" id="b0P-lj-F9j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -734,7 +731,7 @@ Anyone over the age of 13!
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Lx-87-vh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7094" y="-104"/>
+            <point key="canvasLocation" x="7588" y="-111"/>
         </scene>
         <!--View Controller VolunteerFAQ-->
         <scene sceneID="VVK-vR-ob3">
@@ -824,7 +821,7 @@ Anyone over the age of 13!
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hl1-yb-Sc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3566" y="1433"/>
+            <point key="canvasLocation" x="2865" y="1961"/>
         </scene>
         <!--View Controller Donate-->
         <scene sceneID="pNS-KB-hQ4">
@@ -1533,10 +1530,69 @@ Anyone over the age of 13!
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1N6-lk-4VE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5002" y="1897"/>
+            <point key="canvasLocation" x="5308" y="1871"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4rE-CH-C44">
+            <objects>
+                <viewController id="EhH-dZ-OEW" customClass="ViewController" customModule="GMStepperExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BQb-V9-9N1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Svj-Bd-AM9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ek-dE-d7n" customClass="GMStepper" customModule="Caties_Closet_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8TG-fO-p0S" customClass="GMStepper" customModule="GMStepperExample" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="226" width="200" height="66"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Sm2-Jc-4Cg"/>
+                                    <constraint firstAttribute="height" constant="66" id="xgB-H2-NYY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonsBackgroundColor">
+                                        <color key="value" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelTextColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelBackgroundColor">
+                                        <color key="value" red="0.6588235294" green="0.85882352939999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonsTextColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="limitHitAnimationColor">
+                                        <color key="value" red="0.6588235294" green="0.85882352939999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="RUq-z5-cxb"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstStepper" destination="8TG-fO-p0S" id="b3P-3b-B95"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhH-CT-oyp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="1746"/>
         </scene>
     </scenes>
     <resources>
+        <image name="aboutUs" width="153" height="135"/>
+        <image name="aboutUsFirst" width="648" height="549"/>
+        <image name="aboutUsFourth" width="245" height="253"/>
+        <image name="aboutUsSecond" width="547" height="500"/>
+        <image name="aboutUsThird" width="417" height="343"/>
         <image name="download.png" width="730" height="226"/>
+        <image name="logo" width="202" height="79"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1ob-Ar-3dZ"/>
+        <segue reference="PDA-VX-xCB"/>
+    </inferredMetricsTieBreakers>
 </document>
