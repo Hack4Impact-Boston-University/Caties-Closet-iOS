@@ -22,7 +22,7 @@ class ViewControllerVolunteerFAQ: UITableViewController {
         ExpandableQuestions(isExpanded: false, questions: ["This is question 3"], answers: ["Answer to question 3"]),
         ]
     
-    
+     
     
     override func viewDidLoad() {
         super.viewDidLoad()

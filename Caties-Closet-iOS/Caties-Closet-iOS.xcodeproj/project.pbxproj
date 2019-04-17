@@ -20,6 +20,8 @@
 		53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7522247B6500F58E05 /* ViewControllerHome.swift */; };
 		53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7722247B9900F58E05 /* ViewControllerProfile.swift */; };
 		53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */; };
+		5636B1C12252AB2200DE7D7B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636B1C02252AB2200DE7D7B /* Test.swift */; };
+		5636B1C72252AD4A00DE7D7B /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636B1C62252AD4A00DE7D7B /* GMStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		53208B7522247B6500F58E05 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 		53208B7722247B9900F58E05 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
 		53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
+		5636B1C02252AB2200DE7D7B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		5636B1C62252AD4A00DE7D7B /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		53208B55222472C500F58E05 = {
 			isa = PBXGroup;
 			children = (
+				5636B1C52252AD4000DE7D7B /* GMStepper */,
 				53208B60222472C500F58E05 /* Caties-Closet-iOS */,
 				53208B5F222472C500F58E05 /* Products */,
 			);
@@ -73,6 +78,7 @@
 				53208B61222472C500F58E05 /* AppDelegate.swift */,
 				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
 				53208B65222472C500F58E05 /* Main.storyboard */,
+				5636B1C02252AB2200DE7D7B /* Test.swift */,
 				53208B68222472C700F58E05 /* Assets.xcassets */,
 				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
 				53208B6D222472C700F58E05 /* Info.plist */,
@@ -86,6 +92,14 @@
 				481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */,
 			);
 			path = "Caties-Closet-iOS";
+			sourceTree = "<group>";
+		};
+		5636B1C52252AD4000DE7D7B /* GMStepper */ = {
+			isa = PBXGroup;
+			children = (
+				5636B1C62252AD4A00DE7D7B /* GMStepper.swift */,
+			);
+			path = GMStepper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */,
+				5636B1C72252AD4A00DE7D7B /* GMStepper.swift in Sources */,
 				481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */,
 				53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */,
 				481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */,
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
+				5636B1C12252AB2200DE7D7B /* Test.swift in Sources */,
 				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,
 				481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */,
 				53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */,
