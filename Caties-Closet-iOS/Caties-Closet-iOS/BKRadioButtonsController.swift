@@ -5,7 +5,7 @@
 //  Created by Архип on 3/22/17.
 //  Copyright © 2017 ArkhypKoshel. All rights reserved.
 //
-//  Modified by Cici Chen on 3/29/2019
+//  Modified by Hack4ImpactBostonUniversity on 3/29/2019
 //  Copyright © 2019 Hack4ImpactBostonUniversity. All rights reserved.
 //
 

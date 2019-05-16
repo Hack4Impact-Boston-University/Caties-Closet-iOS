@@ -1,8 +1,8 @@
 //
-//  ViewControllerVolunteerFAQ.swift
+//  DonationFormButtonViewController.swift
 //  Caties-Closet-iOS
 //
-//  Created by Hack4ImpactBostonUniversity on 3/15/19.
+//  Created by Hack4ImpactBostonUniversity on 4/7/19.
 //  Copyright © 2019 Hack4ImpactBostonUniversity. All rights reserved.
 //
 
@@ -10,16 +10,19 @@ import UIKit
 
 
 
-class ViewControllerVolunteerFAQ: UITableViewController {
+class DonationFormButtonViewController: UITableViewController {
     
     
     
     let cellId = "cellId123123"
     
+
+
+
     var twoDimensionalArray = [
-        ExpandableQuestions(isExpanded: false, questions: ["This is question 1"], answers: ["Answer to question 1"]),
-        ExpandableQuestions(isExpanded: false, questions: ["This is question 2"], answers: ["Answer to question 2"]),
-        ExpandableQuestions(isExpanded: false, questions: ["This is question 3"], answers: ["Answer to question 3"]),
+        ExpandableDonationItems(isExpanded: false, items: ["Girls"], content: [["+" as AnyObject, "hi" as AnyObject, "hi" as AnyObject, "hi" as AnyObject],[8 as AnyObject, "hi" as AnyObject, "hi" as AnyObject, "hi" as AnyObject]]),
+        ExpandableDonationItems(isExpanded: false, items: ["Girls"], content: [[8 as AnyObject, "hi" as AnyObject, "hi" as AnyObject, "hi" as AnyObject]]),
+        ExpandableDonationItems(isExpanded: false, items: ["Girls"], content: [[8 as AnyObject, "hi" as AnyObject, "hi" as AnyObject, "hi" as AnyObject]]),
         ]
     
     
@@ -34,8 +37,8 @@ class ViewControllerVolunteerFAQ: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let button = UIButton(type: .system)
-        for i in twoDimensionalArray[section].questions.indices{
-            button.setTitle(twoDimensionalArray[section].questions[i], for: .normal)
+        for i in twoDimensionalArray[section].items.indices{
+            button.setTitle(twoDimensionalArray[section].items[i], for: .normal)
         }
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = UIColor(red: 0/255, green: 163/255, blue: 8/255, alpha: 1.0)
@@ -54,7 +57,7 @@ class ViewControllerVolunteerFAQ: UITableViewController {
         
         // we'll try to close the section first by deleting the rows
         var indexPaths = [IndexPath]()
-        for row in twoDimensionalArray[section].answers.indices {
+        for row in twoDimensionalArray[section].content.indices {
             let indexPath = IndexPath(row: row, section: section)
             indexPaths.append(indexPath)
         }
@@ -80,16 +83,15 @@ class ViewControllerVolunteerFAQ: UITableViewController {
             return 0
         }
         
-        return twoDimensionalArray[section].answers.count
+        return twoDimensionalArray[section].content.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        let answer = twoDimensionalArray[indexPath.section].answers[indexPath.row]
+        let content = twoDimensionalArray[indexPath.section].content[indexPath.row]
         
-        cell.textLabel?.text = answer
-        
-        
+        //cell.textLabel?.text = (String, content)
+
         
         return cell
     }

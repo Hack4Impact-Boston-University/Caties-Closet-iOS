@@ -5,7 +5,7 @@
 //  Created by Brian Voong on 11/17/17.
 //  Copyright © 2017 Lets Build That App. All rights reserved.
 //
-//  Modified by Cici Chen on 3/15/2019
+//  Modified by Hack4ImpactBostonUniversity on 3/15/2019
 //  Copyright © 2019 Hack4ImpactBostonUniversity. All rights reserved.
 //
 
