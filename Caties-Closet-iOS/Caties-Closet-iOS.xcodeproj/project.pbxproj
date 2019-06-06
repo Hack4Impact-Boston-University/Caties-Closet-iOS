@@ -12,6 +12,12 @@
 		481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */; };
 		481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */; };
 		481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */; };
+		4831BBC322A84BD900E73F6F /* ConfirmLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBC222A84BD900E73F6F /* ConfirmLoginViewController.swift */; };
+		4831BBC522A851BD00E73F6F /* TapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBC422A851BD00E73F6F /* TapFeature.swift */; };
+		4831BBCD22A8E85300E73F6F /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */; };
+		4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */; };
+		4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */; };
+		4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C822A9640700AF0A34 /* ComputeDonation.swift */; };
 		4855A3B0226E6D4B00BADDB8 /* buttonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */; };
 		4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B1226E6D6200BADDB8 /* Button.swift */; };
 		4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */; };
@@ -33,6 +39,12 @@
 		481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKRadioButtonsController.swift; sourceTree = "<group>"; };
 		481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDonate.swift; sourceTree = "<group>"; };
 		481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableQuestions.swift; sourceTree = "<group>"; };
+		4831BBC222A84BD900E73F6F /* ConfirmLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLoginViewController.swift; sourceTree = "<group>"; };
+		4831BBC422A851BD00E73F6F /* TapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapFeature.swift; sourceTree = "<group>"; };
+		4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDonation.swift; sourceTree = "<group>"; };
+		4833B8C822A9640700AF0A34 /* ComputeDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeDonation.swift; sourceTree = "<group>"; };
 		4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonClass.swift; sourceTree = "<group>"; };
 		4855A3B1226E6D6200BADDB8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsSwipeViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				53208B61222472C500F58E05 /* AppDelegate.swift */,
+				4831BBC222A84BD900E73F6F /* ConfirmLoginViewController.swift */,
 				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
+				4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */,
+				4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */,
 				53208B65222472C500F58E05 /* Main.storyboard */,
 				53208B68222472C700F58E05 /* Assets.xcassets */,
 				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
@@ -92,13 +107,16 @@
 				4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */,
 				4855A3B1226E6D6200BADDB8 /* Button.swift */,
 				481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */,
-				4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */,
 				481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */,
+				4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */,
 				481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */,
 				481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */,
 				481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */,
 				48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */,
 				48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */,
+				4831BBC422A851BD00E73F6F /* TapFeature.swift */,
+				4833B8C822A9640700AF0A34 /* ComputeDonation.swift */,
+				4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */,
 			);
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
@@ -175,11 +193,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */,
+				4831BBCD22A8E85300E73F6F /* ConfirmSignUpViewController.swift in Sources */,
 				481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */,
+				4831BBC322A84BD900E73F6F /* ConfirmLoginViewController.swift in Sources */,
+				4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */,
 				481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */,
+				4831BBC522A851BD00E73F6F /* TapFeature.swift in Sources */,
 				53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */,
 				481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */,
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
+				4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */,
+				4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */,
 				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,
 				481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */,
 				4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */,

@@ -25,6 +25,8 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         
         self.radioButtonsController2 = BKRadioButtonsController(radioButtons: self.radioButtons2)
         
+        self.HideKeyboard()
+
     }
     
     func selectedButton(sender: AKRadioButton){
@@ -34,5 +36,56 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
     func selectedButton(sender: BKRadioButton){
         
     }
+    
+    var count = 0.00
+    @IBOutlet weak var otherprice: UITextField!
+    @IBOutlet weak var TotalPrice: UITextView!
+    
+    let userDefaults = UserDefaults.standard
+
+    @IBAction func MonetaryDonation25(_ sender: Any) {
+        count = 25.00
+        TotalPrice.text = "$" + String(count)
+        
+        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.synchronize()
+    }
+    
+    @IBAction func MonetaryDonation50(_ sender: Any) {
+        count = 50.00
+        TotalPrice.text = "$" + String(count)
+        
+        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.synchronize()
+    }
+    
+    @IBAction func MonetaryDonation100(_ sender: Any) {
+        count = 100.00
+        TotalPrice.text = "$" + String(count)
+        
+        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.synchronize()
+    }
+    
+    @IBAction func MonetaryDonation250(_ sender: Any) {
+        count = 250.00
+        TotalPrice.text = "$" + String(count)
+        
+        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.synchronize()
+    }
+    
+    @IBAction func MonetaryDonationOther(_ sender: Any) {
+        if let count = Double(otherprice.text!) {
+            TotalPrice.text = "$" + String(count)
+            
+            userDefaults.set(count, forKey:"singleDonationMoney")
+            userDefaults.synchronize()
+        }
+        else {
+            print("Not a valid number: \(otherprice.text!)")
+        }
+    }
+    
     
 }

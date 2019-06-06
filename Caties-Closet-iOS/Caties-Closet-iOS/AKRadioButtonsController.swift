@@ -11,6 +11,7 @@
 
 import UIKit
 class AKRadioButton: UIButton {
+    
     var _imageView: UIImageView?
     var cornerRadiusOfImage: CGFloat?  = nil
     
@@ -50,7 +51,9 @@ class AKRadioButton: UIButton {
 protocol AKRadioButtonsControllerDelegate {
     func selectedButton(sender: AKRadioButton);
 }
+
 class AKRadioButtonsController: NSObject {
+    
     var delegate : AKRadioButtonsControllerDelegate?
     var radioButtons: [AKRadioButton]!
     var startGradColorForSelected : UIColor = UIColor(red: 29/255, green: 199/255, blue: 160/255, alpha: 1.0) {
@@ -190,6 +193,4 @@ class AKRadioButtonsController: NSObject {
             butt.set_Image(image: uiImage)
         }
     }
-    
-    
 }
