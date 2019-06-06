@@ -3710,7 +3710,7 @@ Anyone over the age of 13!</string>
                                 </state>
                                 <connections>
                                     <action selector="mailDonation:" destination="r83-29-G2E" eventType="touchUpInside" id="oxQ-t7-Cr8"/>
-                                    <segue destination="vVV-ak-Gb0" kind="showDetail" id="68d-GI-g95"/>
+                                    <segue destination="vVV-ak-Gb0" kind="showDetail" id="v8v-73-B6w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuT-g6-bsm">
@@ -3831,6 +3831,9 @@ Anyone over the age of 13!</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qER-jK-Wsq">
                                 <rect key="frame" x="15" y="337" width="343" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="72d-rA-Rq8"/>
                                     <constraint firstAttribute="width" secondItem="qER-jK-Wsq" secondAttribute="height" multiplier="343:225" constant="38.111111111111086" id="8K1-zQ-FDV"/>
@@ -4021,7 +4024,7 @@ We're proof compassion can change the world.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsThird" translatesAutoresizingMaskIntoConstraints="NO" id="FUO-WO-kfs">
-                                <rect key="frame" x="22.5" y="127" width="330" height="292"/>
+                                <rect key="frame" x="22.5" y="127" width="330.00000000000023" height="292"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="292" id="STG-y2-jaE"/>
                                     <constraint firstAttribute="width" constant="330" id="sZQ-7U-tde"/>
@@ -4088,7 +4091,7 @@ We're proof compassion can change the world.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsFourth" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-Yh-Ean">
-                                <rect key="frame" x="40.5" y="149" width="294" height="275"/>
+                                <rect key="frame" x="40.5" y="149" width="294" height="275.00000000000011"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="Ney-X1-ltg"/>
                                     <constraint firstAttribute="height" constant="275" id="bdB-YA-eiG"/>
@@ -4274,7 +4277,7 @@ We're proof compassion can change the world.
                                 <rect key="frame" x="0.0" y="601" width="375" height="187"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share your donation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uaq-sn-0tm">
-                                        <rect key="frame" x="8" y="1" width="195" height="19"/>
+                                        <rect key="frame" x="8" y="11" width="195" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="19" id="HHs-d0-m57"/>
                                             <constraint firstAttribute="width" constant="195" id="Hux-PC-VAV"/>
@@ -4284,19 +4287,19 @@ We're proof compassion can change the world.
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share your donation to spread love and let " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-qW-Axx">
-                                        <rect key="frame" x="8" y="28" width="378" height="19"/>
+                                        <rect key="frame" x="8" y="38" width="378" height="19"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="others know how you donated to Catie's Closet!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-2h-Qn3">
-                                        <rect key="frame" x="8" y="46" width="349" height="19"/>
+                                        <rect key="frame" x="8" y="56" width="349" height="19"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPX-mq-6Ta">
-                                        <rect key="frame" x="115" y="75" width="145" height="45"/>
+                                        <rect key="frame" x="115" y="85" width="145" height="45"/>
                                         <color key="backgroundColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="145" id="4q3-6I-boK"/>
@@ -4322,7 +4325,7 @@ We're proof compassion can change the world.
                                     <constraint firstItem="jPX-mq-6Ta" firstAttribute="top" secondItem="pdV-2h-Qn3" secondAttribute="bottom" constant="10" id="cCK-P6-Ne2"/>
                                     <constraint firstItem="gCp-qW-Axx" firstAttribute="top" secondItem="Uaq-sn-0tm" secondAttribute="bottom" constant="8" symbolic="YES" id="k8g-aR-gho"/>
                                     <constraint firstItem="jPX-mq-6Ta" firstAttribute="centerX" secondItem="EWT-zl-QiH" secondAttribute="centerX" id="nl1-dk-dko"/>
-                                    <constraint firstAttribute="bottom" secondItem="jPX-mq-6Ta" secondAttribute="bottom" constant="67" id="tGc-w8-axP"/>
+                                    <constraint firstAttribute="bottom" secondItem="jPX-mq-6Ta" secondAttribute="bottom" constant="57" id="tGc-w8-axP"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smilingchild" translatesAutoresizingMaskIntoConstraints="NO" id="6dD-jd-qFf">
@@ -4563,7 +4566,7 @@ We're proof compassion can change the world.
         <image name="smilingchild" width="720" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dmK-RK-lMb"/>
+        <segue reference="Pd1-KX-OWe"/>
         <segue reference="XKR-t1-Mqz"/>
         <segue reference="fv6-mA-wKl"/>
         <segue reference="PwR-x5-ACS"/>
@@ -4572,7 +4575,7 @@ We're proof compassion can change the world.
         <segue reference="fzh-04-1bF"/>
         <segue reference="xZh-vy-G5v"/>
         <segue reference="obz-2V-E5D"/>
-        <segue reference="AIk-LF-Lgl"/>
+        <segue reference="0Hs-yO-L3F"/>
         <segue reference="r4R-bQ-lVd"/>
         <segue reference="57i-bH-00D"/>
     </inferredMetricsTieBreakers>
