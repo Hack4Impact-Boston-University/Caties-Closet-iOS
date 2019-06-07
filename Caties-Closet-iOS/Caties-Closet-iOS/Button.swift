@@ -50,6 +50,8 @@ class Button: UIViewController {
         self.count += 1
         userDefaults.set(count, forKey:"donationBoxesDB")
         userDefaults.synchronize()
+        var data = UserDefaults.standard.integer(forKey: "donationBoxesDB")
+        print("in database" + String(data))
     }
     @IBAction func addOne2(_ sender: Any) {
         number2.add()

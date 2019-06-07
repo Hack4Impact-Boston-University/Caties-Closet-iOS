@@ -47,7 +47,7 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         count = 25.00
         TotalPrice.text = "$" + String(count)
         
-        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.set(count, forKey:"donationMoney")
         userDefaults.synchronize()
     }
     
@@ -55,7 +55,7 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         count = 50.00
         TotalPrice.text = "$" + String(count)
         
-        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.set(count, forKey:"donationMoney")
         userDefaults.synchronize()
     }
     
@@ -63,7 +63,7 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         count = 100.00
         TotalPrice.text = "$" + String(count)
         
-        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.set(count, forKey:"donationMoney")
         userDefaults.synchronize()
     }
     
@@ -71,7 +71,7 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         count = 250.00
         TotalPrice.text = "$" + String(count)
         
-        userDefaults.set(count, forKey:"singleDonationMoney")
+        userDefaults.set(count, forKey:"donationMoney")
         userDefaults.synchronize()
     }
     
@@ -79,7 +79,7 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         if let count = Double(otherprice.text!) {
             TotalPrice.text = "$" + String(count)
             
-            userDefaults.set(count, forKey:"singleDonationMoney")
+            userDefaults.set(count, forKey:"donationMoney")
             userDefaults.synchronize()
         }
         else {

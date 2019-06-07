@@ -20,12 +20,12 @@ class ComputeDonation : UIViewController {
     
     @IBAction func pickUpDonation(_ sender: Any) {
         totalTimes += 1
-        totalBoxes += UserDefaults.standard.integer(forKey: "totalBoxesDB")
+        totalBoxes += UserDefaults.standard.integer(forKey: "donationBoxesDB")
         
         // Store data with keys
         print(totalBoxes)
+        
         userDefaults.set(totalTimes, forKey:"totalTimesDB")
-
         userDefaults.set(totalBoxes, forKey:"totalBoxesDB")
         userDefaults.synchronize()
         
@@ -36,7 +36,7 @@ class ComputeDonation : UIViewController {
     
     @IBAction func mailDonation(_ sender: Any) {
         totalTimes += 1
-        totalBoxes += UserDefaults.standard.integer(forKey: "totalBoxesDB")
+        totalBoxes += UserDefaults.standard.integer(forKey: "donationBoxesDB")
         
         userDefaults.set(totalTimes, forKey:"totalTimesDB")
         userDefaults.set(totalBoxes, forKey:"totalBoxesDB")
@@ -48,7 +48,7 @@ class ComputeDonation : UIViewController {
     
     @IBAction func moneyDonation(_ sender: Any) {
         totalTimes += 1
-        totalMoney += UserDefaults.standard.double(forKey: "totalMoneyDB")
+        totalMoney += UserDefaults.standard.double(forKey: "donationMoneyDB")
         
         userDefaults.set(totalTimes, forKey:"totalTimesDB")
         userDefaults.set(totalMoney, forKey:"totalMoneyDB")

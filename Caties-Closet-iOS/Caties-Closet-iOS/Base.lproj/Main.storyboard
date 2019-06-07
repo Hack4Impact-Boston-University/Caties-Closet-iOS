@@ -4024,7 +4024,7 @@ We're proof compassion can change the world.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsThird" translatesAutoresizingMaskIntoConstraints="NO" id="FUO-WO-kfs">
-                                <rect key="frame" x="22.5" y="127" width="330.00000000000023" height="292"/>
+                                <rect key="frame" x="22.5" y="127" width="330" height="292"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="292" id="STG-y2-jaE"/>
                                     <constraint firstAttribute="width" constant="330" id="sZQ-7U-tde"/>
@@ -4091,7 +4091,7 @@ We're proof compassion can change the world.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsFourth" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-Yh-Ean">
-                                <rect key="frame" x="40.5" y="149" width="294" height="275.00000000000011"/>
+                                <rect key="frame" x="40.5" y="149" width="294" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="Ney-X1-ltg"/>
                                     <constraint firstAttribute="height" constant="275" id="bdB-YA-eiG"/>
