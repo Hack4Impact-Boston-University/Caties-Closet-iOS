@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 extension UIViewController {
     func HideKeyboard() {
@@ -22,7 +23,8 @@ extension UIViewController {
 
 
 class ViewControllerLogin: UIViewController {
-    
+
+
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
     
     @IBAction func goToSignUpPage(_ sender:UIButton) {
@@ -157,6 +159,7 @@ class ViewControllerLogin: UIViewController {
         super.viewDidLoad()
         
         self.HideKeyboard()
+        
     }
     
 

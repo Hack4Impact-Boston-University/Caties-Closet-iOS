@@ -71,25 +71,28 @@
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImpactScreen" translatesAutoresizingMaskIntoConstraints="NO" id="P7J-1r-Sn3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImpactScreen" translatesAutoresizingMaskIntoConstraints="NO" id="P7J-1r-Sn3">
                                 <rect key="frame" x="22" y="189" width="330" height="341"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4y5-A6-fPZ" firstAttribute="top" secondItem="P7J-1r-Sn3" secondAttribute="bottom" constant="17" id="4Ks-i4-Xhx"/>
                             <constraint firstItem="sbD-6e-pVs" firstAttribute="top" secondItem="AhK-Es-94V" secondAttribute="bottom" constant="43" id="4jT-IZ-KdL"/>
+                            <constraint firstItem="P7J-1r-Sn3" firstAttribute="top" secondItem="sbD-6e-pVs" secondAttribute="bottom" constant="1" id="G6Y-nR-9dz"/>
                             <constraint firstAttribute="trailing" secondItem="vSj-aU-JyL" secondAttribute="trailing" constant="48" id="Ida-04-uj0"/>
                             <constraint firstAttribute="trailing" secondItem="wb5-s0-Cml" secondAttribute="trailing" constant="23" id="KHM-7M-w7u"/>
                             <constraint firstAttribute="trailing" secondItem="4y5-A6-fPZ" secondAttribute="trailing" constant="48" id="Kht-ls-Jkb"/>
                             <constraint firstItem="sbD-6e-pVs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="OCH-Uk-93P"/>
                             <constraint firstItem="vSj-aU-JyL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="PPy-b6-ACX"/>
                             <constraint firstAttribute="trailing" secondItem="sbD-6e-pVs" secondAttribute="trailing" constant="23" id="RXE-lo-kJh"/>
+                            <constraint firstItem="P7J-1r-Sn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="Ukk-Y5-Xqw"/>
                             <constraint firstItem="0Pw-kn-5fz" firstAttribute="top" secondItem="vSj-aU-JyL" secondAttribute="bottom" constant="29" id="ZvY-pf-giG"/>
                             <constraint firstItem="vSj-aU-JyL" firstAttribute="top" secondItem="4y5-A6-fPZ" secondAttribute="bottom" constant="11" id="dVl-Oi-pmE"/>
                             <constraint firstItem="wb5-s0-Cml" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="238" id="fyf-RP-Cy4"/>
                             <constraint firstItem="wb5-s0-Cml" firstAttribute="top" secondItem="AhK-Es-94V" secondAttribute="bottom" constant="111" id="iCV-KX-ewf"/>
                             <constraint firstItem="4y5-A6-fPZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="p6J-ty-E2M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P7J-1r-Sn3" secondAttribute="trailing" constant="7" id="wRn-tH-CMz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="AgY-IM-RY1"/>
@@ -970,8 +973,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="items of clothing &amp; toiletries" translatesAutoresizingMaskIntoConstraints="NO" id="E55-Nc-njT">
-                                <rect key="frame" x="87" y="440" width="266" height="44"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="item(s) of clothing / toiletries" translatesAutoresizingMaskIntoConstraints="NO" id="E55-Nc-njT">
+                                <rect key="frame" x="101" y="440" width="268" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -988,7 +991,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s05-19-9JE">
-                                <rect key="frame" x="16" y="428" width="63" height="69"/>
+                                <rect key="frame" x="16" y="428" width="83" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -998,14 +1001,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="and $" translatesAutoresizingMaskIntoConstraints="NO" id="vFZ-5n-v4K">
-                                <rect key="frame" x="211" y="504" width="111" height="44"/>
+                                <rect key="frame" x="158" y="504" width="111" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jPF-tI-ev8">
-                                <rect key="frame" x="271" y="492" width="63" height="69"/>
+                                <rect key="frame" x="220" y="492" width="139" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -3459,7 +3462,7 @@ Anyone over the age of 13!</string>
                                 </state>
                                 <connections>
                                     <action selector="pickUpDonation:" destination="UdD-9T-R94" eventType="touchUpInside" id="6mt-pU-sDO"/>
-                                    <segue destination="vVV-ak-Gb0" kind="showDetail" id="Pd1-KX-OWe"/>
+                                    <segue destination="vVV-ak-Gb0" kind="showDetail" id="EaQ-TN-c0u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTX-1e-xgr">
@@ -3903,10 +3906,10 @@ We're proof compassion can change the world.
             </objects>
             <point key="canvasLocation" x="5889" y="-448"/>
         </scene>
-        <!--View Controller-->
+        <!--ShareFB View Controller-->
         <scene sceneID="Lpx-MY-C6i">
             <objects>
-                <viewController id="vVV-ak-Gb0" customClass="ViewController" customModule="Caties_Closet_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vVV-ak-Gb0" customClass="ShareFBViewController" customModule="Caties_Closet_iOS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i1c-IF-9eG"/>
                         <viewControllerLayoutGuide type="bottom" id="7qq-AQ-3I8"/>
@@ -3973,11 +3976,11 @@ We're proof compassion can change the world.
                                     <constraint firstItem="9cn-up-8dC" firstAttribute="leading" secondItem="1iC-D3-dHV" secondAttribute="leading" id="zyC-Jw-He0"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-zl-QiH">
-                                <rect key="frame" x="0.0" y="601" width="375" height="187"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-zl-QiH">
+                                <rect key="frame" x="0.0" y="190" width="375" height="293"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share your donation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uaq-sn-0tm">
-                                        <rect key="frame" x="8" y="11" width="195" height="19"/>
+                                        <rect key="frame" x="8" y="39" width="195" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="19" id="HHs-d0-m57"/>
                                             <constraint firstAttribute="width" constant="195" id="Hux-PC-VAV"/>
@@ -3987,33 +3990,17 @@ We're proof compassion can change the world.
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share your donation to spread love and let " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-qW-Axx">
-                                        <rect key="frame" x="8" y="38" width="378" height="19"/>
+                                        <rect key="frame" x="8" y="66" width="378" height="19"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="others know how you donated to Catie's Closet!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-2h-Qn3">
-                                        <rect key="frame" x="8" y="56" width="349" height="19"/>
+                                        <rect key="frame" x="8" y="84" width="349" height="19"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPX-mq-6Ta">
-                                        <rect key="frame" x="115" y="85" width="145" height="45"/>
-                                        <color key="backgroundColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="145" id="4q3-6I-boK"/>
-                                            <constraint firstAttribute="height" constant="45" id="vOM-G8-Z1W"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Share!">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="shareButton:" destination="vVV-ak-Gb0" eventType="touchUpInside" id="5YZ-oL-Lq7"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.93286789429999994" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -4022,14 +4009,12 @@ We're proof compassion can change the world.
                                     <constraint firstItem="gCp-qW-Axx" firstAttribute="leading" secondItem="Uaq-sn-0tm" secondAttribute="leading" id="AUK-hw-vNM"/>
                                     <constraint firstItem="gCp-qW-Axx" firstAttribute="leading" secondItem="EWT-zl-QiH" secondAttribute="leadingMargin" id="Ajr-fr-FpI"/>
                                     <constraint firstItem="pdV-2h-Qn3" firstAttribute="top" secondItem="Uaq-sn-0tm" secondAttribute="bottom" constant="26" id="Nl6-11-Oc5"/>
-                                    <constraint firstItem="jPX-mq-6Ta" firstAttribute="top" secondItem="pdV-2h-Qn3" secondAttribute="bottom" constant="10" id="cCK-P6-Ne2"/>
                                     <constraint firstItem="gCp-qW-Axx" firstAttribute="top" secondItem="Uaq-sn-0tm" secondAttribute="bottom" constant="8" symbolic="YES" id="k8g-aR-gho"/>
-                                    <constraint firstItem="jPX-mq-6Ta" firstAttribute="centerX" secondItem="EWT-zl-QiH" secondAttribute="centerX" id="nl1-dk-dko"/>
-                                    <constraint firstAttribute="bottom" secondItem="jPX-mq-6Ta" secondAttribute="bottom" constant="57" id="tGc-w8-axP"/>
+                                    <constraint firstItem="Uaq-sn-0tm" firstAttribute="top" secondItem="EWT-zl-QiH" secondAttribute="top" constant="39" id="uAm-om-oTG"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smilingchild" translatesAutoresizingMaskIntoConstraints="NO" id="6dD-jd-qFf">
-                                <rect key="frame" x="-27" y="205" width="446" height="340"/>
+                                <rect key="frame" x="-36" y="337" width="446" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="QDs-yD-KLU"/>
                                 </constraints>
@@ -4038,18 +4023,18 @@ We're proof compassion can change the world.
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="u7n-pZ-AHR" secondAttribute="trailing" id="0kA-5V-vvZ"/>
-                            <constraint firstItem="EWT-zl-QiH" firstAttribute="top" secondItem="6dD-jd-qFf" secondAttribute="bottom" constant="56" id="9GM-fM-RRN"/>
+                            <constraint firstItem="EWT-zl-QiH" firstAttribute="top" secondItem="6dD-jd-qFf" secondAttribute="bottom" constant="-487" id="9GM-fM-RRN"/>
                             <constraint firstItem="u7n-pZ-AHR" firstAttribute="leading" secondItem="gLJ-Ga-H6V" secondAttribute="leading" id="R9x-jB-kpr"/>
-                            <constraint firstItem="6dD-jd-qFf" firstAttribute="leading" secondItem="EWT-zl-QiH" secondAttribute="leading" constant="-27" id="SST-uE-0xv"/>
+                            <constraint firstItem="6dD-jd-qFf" firstAttribute="leading" secondItem="EWT-zl-QiH" secondAttribute="leading" constant="-36" id="SST-uE-0xv"/>
                             <constraint firstItem="u7n-pZ-AHR" firstAttribute="top" secondItem="28x-pD-dSI" secondAttribute="bottom" constant="15" id="UaB-h9-LQW"/>
-                            <constraint firstItem="u7n-pZ-AHR" firstAttribute="trailing" secondItem="6dD-jd-qFf" secondAttribute="trailing" constant="-44" id="Xth-4z-9Wy"/>
-                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="gLJ-Ga-H6V" secondAttribute="top" constant="205" id="dlc-e3-Oa1"/>
+                            <constraint firstItem="u7n-pZ-AHR" firstAttribute="trailing" secondItem="6dD-jd-qFf" secondAttribute="trailing" constant="-35" id="Xth-4z-9Wy"/>
+                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="gLJ-Ga-H6V" secondAttribute="top" constant="337" id="dlc-e3-Oa1"/>
                             <constraint firstAttribute="trailing" secondItem="28x-pD-dSI" secondAttribute="trailing" constant="102" id="dm5-mL-2iF"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="EWT-zl-QiH" secondAttribute="bottom" constant="-38" id="fg9-A9-1Qh"/>
-                            <constraint firstItem="u7n-pZ-AHR" firstAttribute="leading" secondItem="6dD-jd-qFf" secondAttribute="leading" constant="27" id="oM7-Av-vmW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EWT-zl-QiH" secondAttribute="bottom" constant="373" id="fg9-A9-1Qh"/>
+                            <constraint firstItem="u7n-pZ-AHR" firstAttribute="leading" secondItem="6dD-jd-qFf" secondAttribute="leading" constant="36" id="oM7-Av-vmW"/>
                             <constraint firstItem="28x-pD-dSI" firstAttribute="leading" secondItem="gLJ-Ga-H6V" secondAttribute="leading" constant="119" id="seP-0c-MPQ"/>
-                            <constraint firstItem="6dD-jd-qFf" firstAttribute="trailing" secondItem="EWT-zl-QiH" secondAttribute="trailing" constant="44" id="tc5-pf-yV4"/>
-                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="u7n-pZ-AHR" secondAttribute="bottom" constant="8" id="ugf-Vc-6bU"/>
+                            <constraint firstItem="6dD-jd-qFf" firstAttribute="trailing" secondItem="EWT-zl-QiH" secondAttribute="trailing" constant="35" id="tc5-pf-yV4"/>
+                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="u7n-pZ-AHR" secondAttribute="bottom" constant="140" id="ugf-Vc-6bU"/>
                             <constraint firstItem="28x-pD-dSI" firstAttribute="top" secondItem="i1c-IF-9eG" secondAttribute="bottom" constant="17" id="yQe-V3-ZNe"/>
                         </constraints>
                     </view>
@@ -4057,7 +4042,7 @@ We're proof compassion can change the world.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fj-DH-aoN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4504.8000000000002" y="2654.5727136431788"/>
+            <point key="canvasLocation" x="4528.8000000000002" y="2655.472263868066"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c2z-em-bqb">
@@ -4103,10 +4088,10 @@ We're proof compassion can change the world.
             </objects>
             <point key="canvasLocation" x="7013.6000000000004" y="375.56221889055473"/>
         </scene>
-        <!--View Controller-->
+        <!--ShareFB View Controller-->
         <scene sceneID="QPC-Bo-3p2">
             <objects>
-                <viewController id="NWS-pC-6ge" sceneMemberID="viewController">
+                <viewController id="NWS-pC-6ge" customClass="ShareFBViewController" customModule="Caties_Closet_iOS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="77Y-99-6Xv"/>
                         <viewControllerLayoutGuide type="bottom" id="YmE-Yx-4Sj"/>
@@ -4116,36 +4101,26 @@ We're proof compassion can change the world.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Thank you for joining our team for the good of more children!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vo6-vP-yyg">
-                                <rect key="frame" x="28" y="58" width="319" height="72"/>
+                                <rect key="frame" x="28" y="488" width="319" height="72"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Sign Up Form Successfully Submitted!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wfn-Iw-vNj">
-                                <rect key="frame" x="27" y="25" width="321" height="41"/>
+                                <rect key="frame" x="27" y="455" width="321" height="41"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smilingchild" translatesAutoresizingMaskIntoConstraints="NO" id="X1J-4Z-HIf">
-                                <rect key="frame" x="-58" y="182" width="537" height="340"/>
+                                <rect key="frame" x="-36" y="0.0" width="505" height="305"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="537" id="fCg-5y-FIc"/>
-                                    <constraint firstAttribute="height" constant="340" id="ozH-qX-2TD"/>
+                                    <constraint firstAttribute="width" constant="505" id="fCg-5y-FIc"/>
+                                    <constraint firstAttribute="height" constant="305" id="ozH-qX-2TD"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share to invite your friends to join!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MY4-m3-OCx">
-                                <rect key="frame" x="28" y="530" width="319" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="319" id="Bkc-tH-7Ly"/>
-                                    <constraint firstAttribute="height" constant="24" id="hkS-L4-jjl"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naR-nP-i7y">
-                                <rect key="frame" x="120" y="134" width="135" height="41"/>
+                                <rect key="frame" x="120" y="564" width="135" height="41"/>
                                 <color key="backgroundColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Proceed">
@@ -4155,45 +4130,34 @@ We're proof compassion can change the world.
                                     <segue destination="WI1-H0-6e8" kind="showDetail" id="XKR-t1-Mqz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGx-by-Td4">
-                                <rect key="frame" x="115" y="562" width="145" height="45"/>
-                                <color key="backgroundColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share to invite your friends to join!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MY4-m3-OCx">
+                                <rect key="frame" x="40" y="362" width="319" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="Zhs-nI-dne"/>
-                                    <constraint firstAttribute="height" constant="45" id="xAN-PT-7Td"/>
+                                    <constraint firstAttribute="width" constant="319" id="Bkc-tH-7Ly"/>
+                                    <constraint firstAttribute="height" constant="24" id="hkS-L4-jjl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Share!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareButton:" destination="vVV-ak-Gb0" eventType="touchUpInside" id="BXX-OP-v1q"/>
-                                </connections>
-                            </button>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fGx-by-Td4" firstAttribute="top" secondItem="MY4-m3-OCx" secondAttribute="bottom" constant="8" id="0eF-n8-X7T"/>
-                            <constraint firstItem="Vo6-vP-yyg" firstAttribute="leading" secondItem="MY4-m3-OCx" secondAttribute="leading" id="3jj-Za-7NY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fGx-by-Td4" secondAttribute="trailing" constant="99" id="5db-nm-hR0"/>
-                            <constraint firstItem="Wfn-Iw-vNj" firstAttribute="top" secondItem="77Y-99-6Xv" secondAttribute="bottom" constant="5" id="8Zj-Zi-cXe"/>
+                            <constraint firstItem="Vo6-vP-yyg" firstAttribute="leading" secondItem="MY4-m3-OCx" secondAttribute="leading" constant="-12" id="3jj-Za-7NY"/>
+                            <constraint firstItem="Wfn-Iw-vNj" firstAttribute="top" secondItem="77Y-99-6Xv" secondAttribute="bottom" constant="435" id="8Zj-Zi-cXe"/>
                             <constraint firstItem="naR-nP-i7y" firstAttribute="top" secondItem="Vo6-vP-yyg" secondAttribute="bottom" constant="4" id="9d7-iB-ryv"/>
-                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="top" secondItem="Vo6-vP-yyg" secondAttribute="bottom" constant="52" id="DYU-0R-BMd"/>
-                            <constraint firstItem="Vo6-vP-yyg" firstAttribute="trailing" secondItem="MY4-m3-OCx" secondAttribute="trailing" id="FwB-13-ecR"/>
-                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="top" secondItem="Wfn-Iw-vNj" secondAttribute="bottom" constant="116" id="Ixi-Hh-t1I"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MY4-m3-OCx" secondAttribute="trailing" constant="12" id="Qi6-E6-R8H"/>
-                            <constraint firstItem="fGx-by-Td4" firstAttribute="leading" secondItem="x5v-Su-SfX" secondAttribute="leadingMargin" constant="99" id="WSB-c9-4ZL"/>
+                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="top" secondItem="Vo6-vP-yyg" secondAttribute="bottom" constant="-560" id="DYU-0R-BMd"/>
+                            <constraint firstItem="Vo6-vP-yyg" firstAttribute="trailing" secondItem="MY4-m3-OCx" secondAttribute="trailing" constant="-12" id="FwB-13-ecR"/>
+                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="top" secondItem="Wfn-Iw-vNj" secondAttribute="bottom" constant="-496" id="Ixi-Hh-t1I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MY4-m3-OCx" secondAttribute="trailing" id="Qi6-E6-R8H"/>
                             <constraint firstItem="Vo6-vP-yyg" firstAttribute="centerX" secondItem="naR-nP-i7y" secondAttribute="centerX" id="b6X-mZ-KNH"/>
-                            <constraint firstItem="Vo6-vP-yyg" firstAttribute="top" secondItem="77Y-99-6Xv" secondAttribute="bottom" constant="38" id="eDP-6r-S7n"/>
-                            <constraint firstItem="MY4-m3-OCx" firstAttribute="top" secondItem="X1J-4Z-HIf" secondAttribute="bottom" constant="8" id="fbu-Lb-PbX"/>
-                            <constraint firstItem="MY4-m3-OCx" firstAttribute="leading" secondItem="x5v-Su-SfX" secondAttribute="leadingMargin" constant="12" id="fdz-V4-r9S"/>
-                            <constraint firstItem="YmE-Yx-4Sj" firstAttribute="top" secondItem="fGx-by-Td4" secondAttribute="bottom" constant="60" id="jrP-ed-cQn"/>
-                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="leading" secondItem="x5v-Su-SfX" secondAttribute="leadingMargin" constant="-74" id="tBV-p6-Alf"/>
-                            <constraint firstItem="fGx-by-Td4" firstAttribute="top" secondItem="MY4-m3-OCx" secondAttribute="bottom" constant="8" id="tig-ET-e6e"/>
+                            <constraint firstItem="Vo6-vP-yyg" firstAttribute="top" secondItem="77Y-99-6Xv" secondAttribute="bottom" constant="468" id="eDP-6r-S7n"/>
+                            <constraint firstItem="MY4-m3-OCx" firstAttribute="top" secondItem="X1J-4Z-HIf" secondAttribute="bottom" constant="57" id="fbu-Lb-PbX"/>
+                            <constraint firstItem="MY4-m3-OCx" firstAttribute="leading" secondItem="x5v-Su-SfX" secondAttribute="leadingMargin" constant="24" id="fdz-V4-r9S"/>
+                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="leading" secondItem="x5v-Su-SfX" secondAttribute="leadingMargin" constant="-52" id="tBV-p6-Alf"/>
                             <constraint firstItem="Vo6-vP-yyg" firstAttribute="centerX" secondItem="Wfn-Iw-vNj" secondAttribute="centerX" id="v8h-A7-hQQ"/>
                             <constraint firstItem="Wfn-Iw-vNj" firstAttribute="leading" secondItem="x5v-Su-SfX" secondAttribute="leadingMargin" constant="11" id="x32-f5-PMU"/>
-                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="top" secondItem="x5v-Su-SfX" secondAttribute="top" constant="182" id="xd0-Ja-gQ2"/>
+                            <constraint firstItem="X1J-4Z-HIf" firstAttribute="top" secondItem="x5v-Su-SfX" secondAttribute="top" id="xd0-Ja-gQ2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -4271,16 +4235,16 @@ We're proof compassion can change the world.
         <image name="smilingchild" width="720" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pd1-KX-OWe"/>
+        <segue reference="dmK-RK-lMb"/>
         <segue reference="XKR-t1-Mqz"/>
-        <segue reference="gRW-DT-Xlf"/>
-        <segue reference="vo2-aF-J3X"/>
+        <segue reference="fv6-mA-wKl"/>
+        <segue reference="PwR-x5-ACS"/>
         <segue reference="dDu-zS-yZF"/>
         <segue reference="1ox-mn-z2r"/>
         <segue reference="fzh-04-1bF"/>
         <segue reference="xZh-vy-G5v"/>
         <segue reference="obz-2V-E5D"/>
-        <segue reference="YG3-md-srH"/>
+        <segue reference="Hu4-4g-wwl"/>
         <segue reference="r4R-bQ-lVd"/>
         <segue reference="57i-bH-00D"/>
     </inferredMetricsTieBreakers>

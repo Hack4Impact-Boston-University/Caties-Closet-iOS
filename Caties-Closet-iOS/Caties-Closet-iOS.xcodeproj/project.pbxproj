@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480FB7C122C5311D00A46726 /* ShareFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB7C022C5311D00A46726 /* ShareFBViewController.swift */; };
 		481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */; };
 		481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */; };
 		481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */; };
@@ -18,6 +19,10 @@
 		4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */; };
 		4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */; };
 		4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C822A9640700AF0A34 /* ComputeDonation.swift */; };
+		48550A0A22C302040049C34B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0922C302040049C34B /* Bolts.framework */; };
+		48550A0D22C3020E0049C34B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */; };
+		48550A0E22C3020E0049C34B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */; };
+		48550A1022C302150049C34B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0F22C302150049C34B /* FBSDKShareKit.framework */; };
 		4855A3B0226E6D4B00BADDB8 /* buttonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */; };
 		4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B1226E6D6200BADDB8 /* Button.swift */; };
 		4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */; };
@@ -34,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480FB7C022C5311D00A46726 /* ShareFBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFBViewController.swift; sourceTree = "<group>"; };
 		481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVolunteerFAQ.swift; sourceTree = "<group>"; };
 		481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKRadioButtonsController.swift; sourceTree = "<group>"; };
 		481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKRadioButtonsController.swift; sourceTree = "<group>"; };
@@ -45,6 +51,10 @@
 		4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDonation.swift; sourceTree = "<group>"; };
 		4833B8C822A9640700AF0A34 /* ComputeDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeDonation.swift; sourceTree = "<group>"; };
+		48550A0922C302040049C34B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		48550A0F22C302150049C34B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonClass.swift; sourceTree = "<group>"; };
 		4855A3B1226E6D6200BADDB8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsSwipeViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48550A1022C302150049C34B /* FBSDKShareKit.framework in Frameworks */,
+				48550A0A22C302040049C34B /* Bolts.framework in Frameworks */,
+				48550A0D22C3020E0049C34B /* FBSDKCoreKit.framework in Frameworks */,
+				48550A0E22C3020E0049C34B /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,10 @@
 			children = (
 				53208B60222472C500F58E05 /* Caties-Closet-iOS */,
 				53208B5F222472C500F58E05 /* Products */,
+				48550A0F22C302150049C34B /* FBSDKShareKit.framework */,
+				48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */,
+				48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */,
+				48550A0922C302040049C34B /* Bolts.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +135,7 @@
 				4831BBC422A851BD00E73F6F /* TapFeature.swift */,
 				4833B8C822A9640700AF0A34 /* ComputeDonation.swift */,
 				4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */,
+				480FB7C022C5311D00A46726 /* ShareFBViewController.swift */,
 			);
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
@@ -212,6 +231,7 @@
 				53208B62222472C500F58E05 /* AppDelegate.swift in Sources */,
 				4855A3B0226E6D4B00BADDB8 /* buttonClass.swift in Sources */,
 				48C2D116225A789A00DB373B /* ExpandableDonationItems.swift in Sources */,
+				480FB7C122C5311D00A46726 /* ShareFBViewController.swift in Sources */,
 				48C2D114225A774300DB373B /* DonationFormButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,12 +381,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RFWCSUD72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Caties-Closet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -382,12 +408,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RFWCSUD72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Caties-Closet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
