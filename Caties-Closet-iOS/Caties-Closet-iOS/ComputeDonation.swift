@@ -11,9 +11,9 @@ import UIKit
 
 class ComputeDonation : UIViewController {
     
-    var totalTimes = 0
-    var totalBoxes = 0
-    var totalMoney = 0.00
+    var totalTimes = UserDefaults.standard.integer(forKey: "donationTimesDB")
+    var totalBoxes = UserDefaults.standard.integer(forKey: "donationBoxesDB")
+    var totalMoney = UserDefaults.standard.integer(forKey: "donationMoneyDB")
     
     let userDefaults = UserDefaults.standard
 
@@ -30,7 +30,7 @@ class ComputeDonation : UIViewController {
         userDefaults.synchronize()
         
         
-        performSegue(withIdentifier: "DonationCompute", sender: self)
+        //performSegue(withIdentifier: "DonationCompute", sender: self)
         
     }
     
@@ -42,7 +42,7 @@ class ComputeDonation : UIViewController {
         userDefaults.set(totalBoxes, forKey:"totalBoxesDB")
         userDefaults.synchronize()
         
-        performSegue(withIdentifier: "DonationCompute", sender: self)
+        //performSegue(withIdentifier: "DonationCompute1", sender: self)
         
     }
     
@@ -54,7 +54,7 @@ class ComputeDonation : UIViewController {
         userDefaults.set(totalMoney, forKey:"totalMoneyDB")
         userDefaults.synchronize()
         
-        performSegue(withIdentifier: "DonationCompute", sender: self)
+        //performSegue(withIdentifier: "DonationCompute2", sender: self)
     }
     
     
