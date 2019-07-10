@@ -26,6 +26,8 @@
 		4855A3B0226E6D4B00BADDB8 /* buttonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */; };
 		4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B1226E6D6200BADDB8 /* Button.swift */; };
 		4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */; };
+		488A3AF122D4EA6C0077B7F3 /* DonationFormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */; };
+		488A3AF322D5563E0077B7F3 /* DonationFormInfoPickUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */; };
 		48C2D114225A774300DB373B /* DonationFormButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */; };
 		48C2D116225A789A00DB373B /* ExpandableDonationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */; };
 		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
@@ -58,6 +60,8 @@
 		4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonClass.swift; sourceTree = "<group>"; };
 		4855A3B1226E6D6200BADDB8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsSwipeViewController.swift; sourceTree = "<group>"; };
+		488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormInfo.swift; sourceTree = "<group>"; };
+		488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormInfoPickUp.swift; sourceTree = "<group>"; };
 		48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormButtonViewController.swift; sourceTree = "<group>"; };
 		48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableDonationItems.swift; sourceTree = "<group>"; };
 		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,8 @@
 				4833B8C822A9640700AF0A34 /* ComputeDonation.swift */,
 				4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */,
 				480FB7C022C5311D00A46726 /* ShareFBViewController.swift */,
+				488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */,
+				488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */,
 			);
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
@@ -218,7 +224,9 @@
 				4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */,
 				481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */,
 				4831BBC522A851BD00E73F6F /* TapFeature.swift in Sources */,
+				488A3AF322D5563E0077B7F3 /* DonationFormInfoPickUp.swift in Sources */,
 				53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */,
+				488A3AF122D4EA6C0077B7F3 /* DonationFormInfo.swift in Sources */,
 				481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */,
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
 				4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */,

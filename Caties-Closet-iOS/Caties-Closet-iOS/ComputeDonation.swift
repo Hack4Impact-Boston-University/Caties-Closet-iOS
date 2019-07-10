@@ -11,9 +11,9 @@ import UIKit
 
 class ComputeDonation : UIViewController {
     
-    var totalTimes = UserDefaults.standard.integer(forKey: "donationTimesDB")
-    var totalBoxes = UserDefaults.standard.integer(forKey: "donationBoxesDB")
-    var totalMoney = UserDefaults.standard.integer(forKey: "donationMoneyDB")
+    var totalTimes = UserDefaults.standard.integer(forKey: "totalTimesDB")
+    var totalBoxes = UserDefaults.standard.integer(forKey: "totalBoxesDB")
+    var totalMoney = UserDefaults.standard.double(forKey: "totalMoneyDB")
     
     let userDefaults = UserDefaults.standard
 
@@ -21,9 +21,6 @@ class ComputeDonation : UIViewController {
     @IBAction func pickUpDonation(_ sender: Any) {
         totalTimes += 1
         totalBoxes += UserDefaults.standard.integer(forKey: "donationBoxesDB")
-        
-        // Store data with keys
-        print(totalBoxes)
         
         userDefaults.set(totalTimes, forKey:"totalTimesDB")
         userDefaults.set(totalBoxes, forKey:"totalBoxesDB")

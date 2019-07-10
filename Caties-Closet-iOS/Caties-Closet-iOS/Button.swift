@@ -15,7 +15,6 @@ class Button: UIViewController {
     
     
     
-    
     @IBOutlet weak var number: buttonClass!
     @IBOutlet weak var number2: buttonClass!
     @IBOutlet weak var number3: buttonClass!

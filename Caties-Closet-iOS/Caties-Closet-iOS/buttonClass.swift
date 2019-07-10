@@ -14,6 +14,7 @@ import UIKit
 
 class buttonClass: UILabel{
     
+    
     var count = 0;
     
     func add(){

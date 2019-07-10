@@ -87,5 +87,40 @@ class ViewControllerDonate: UIViewController, AKRadioButtonsControllerDelegate {
         }
     }
     
+    @IBOutlet weak var firstName_money: UITextField!
+    @IBOutlet weak var middleName_money: UITextField!
+    @IBOutlet weak var lastName_money: UITextField!
+    @IBOutlet weak var email_money: UITextField!
+    @IBOutlet weak var country_money: UITextField!
+    @IBOutlet weak var address_money: UITextField!
+    @IBOutlet weak var city_money: UITextField!
+    @IBOutlet weak var state_money: UITextField!
+    @IBOutlet weak var zipCode_money: UITextField!
+    @IBOutlet weak var phone_money: UITextField!
+    @IBOutlet weak var displayName_money: UITextField!
+    @IBOutlet weak var publicComment_money: UITextField!
+    @IBOutlet weak var donationDedicationHonor_money: UITextField!
+    @IBOutlet weak var donationDedicationMemory_money: UITextField!
+    @IBOutlet weak var recognition_money: UITextField!
+    @IBOutlet weak var creditCardName_money: UITextField!
+    @IBOutlet weak var creditCardNumber_money: UITextField!
+    @IBOutlet weak var CVV_money: UITextField!
+    @IBOutlet weak var expirationDate_money: UITextField!
+    
+    // Display error messages.
+    func displayAlert(message: String) {
+        let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        // Might be a good idea to attach handler
+        let defaultAction:UIAlertAction = UIAlertAction(title:"OK", style: UIAlertAction.Style.default, handler:nil)
+        alert.addAction(defaultAction)
+        self.present(alert,animated:true, completion:nil)
+    }
+    
+    @IBAction func money(_ sender: Any) {
+        if (firstName_money.text == "" || lastName_money.text == "" || email_money.text == "" || country_money.text == "" || address_money.text == "" || city_money.text == "" || state_money.text == "" || zipCode_money.text == "" || phone_money.text == "" || creditCardName_money.text == "" || creditCardNumber_money.text == "" || CVV_money.text == "" || expirationDate_money.text == "") {
+            displayAlert(message: "Please fill out the required information.")
+            return
+        }
+    }
     
 }
