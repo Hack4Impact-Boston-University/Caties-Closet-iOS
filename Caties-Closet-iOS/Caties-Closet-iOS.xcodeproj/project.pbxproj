@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		488A3AF322D5563E0077B7F3 /* DonationFormInfoPickUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */; };
 		48C2D114225A774300DB373B /* DonationFormButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */; };
 		48C2D116225A789A00DB373B /* ExpandableDonationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */; };
+		48EC90AE22DE329700B8912E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48EC90AD22DE329700B8912E /* GoogleService-Info.plist */; };
 		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
 		53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B63222472C500F58E05 /* ViewControllerLogin.swift */; };
 		53208B67222472C500F58E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B65222472C500F58E05 /* Main.storyboard */; };
@@ -38,9 +39,11 @@
 		53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7522247B6500F58E05 /* ViewControllerHome.swift */; };
 		53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7722247B9900F58E05 /* ViewControllerProfile.swift */; };
 		53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */; };
+		B0D209A43B575E591B6AF8B6 /* Pods_Caties_Closet_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D1A3711221FC8856E6F60F /* Pods_Caties_Closet_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127A504177D5F82FB4422987 /* Pods-Caties-Closet-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caties-Closet-iOS.release.xcconfig"; path = "Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		480FB7C022C5311D00A46726 /* ShareFBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFBViewController.swift; sourceTree = "<group>"; };
 		481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVolunteerFAQ.swift; sourceTree = "<group>"; };
 		481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKRadioButtonsController.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormInfoPickUp.swift; sourceTree = "<group>"; };
 		48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormButtonViewController.swift; sourceTree = "<group>"; };
 		48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableDonationItems.swift; sourceTree = "<group>"; };
+		48EC90AD22DE329700B8912E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53208B61222472C500F58E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53208B63222472C500F58E05 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		53208B7522247B6500F58E05 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 		53208B7722247B9900F58E05 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
 		53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
+		C2D1A3711221FC8856E6F60F /* Pods_Caties_Closet_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caties_Closet_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAC066A9CE5B4B27AB71238 /* Pods-Caties-Closet-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caties-Closet-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +91,22 @@
 				48550A0A22C302040049C34B /* Bolts.framework in Frameworks */,
 				48550A0D22C3020E0049C34B /* FBSDKCoreKit.framework in Frameworks */,
 				48550A0E22C3020E0049C34B /* FBSDKLoginKit.framework in Frameworks */,
+				B0D209A43B575E591B6AF8B6 /* Pods_Caties_Closet_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420C8C6910DF77BE03AFF030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCAC066A9CE5B4B27AB71238 /* Pods-Caties-Closet-iOS.debug.xcconfig */,
+				127A504177D5F82FB4422987 /* Pods-Caties-Closet-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		53208B55222472C500F58E05 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +116,8 @@
 				48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */,
 				48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */,
 				48550A0922C302040049C34B /* Bolts.framework */,
+				420C8C6910DF77BE03AFF030 /* Pods */,
+				A8E6482D0B57666DEE481D69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +141,7 @@
 				53208B68222472C700F58E05 /* Assets.xcassets */,
 				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
 				53208B6D222472C700F58E05 /* Info.plist */,
+				48EC90AD22DE329700B8912E /* GoogleService-Info.plist */,
 				53208B7522247B6500F58E05 /* ViewControllerHome.swift */,
 				53208B7722247B9900F58E05 /* ViewControllerProfile.swift */,
 				53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */,
@@ -146,6 +165,14 @@
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
 		};
+		A8E6482D0B57666DEE481D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1A3711221FC8856E6F60F /* Pods_Caties_Closet_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53208B70222472C700F58E05 /* Build configuration list for PBXNativeTarget "Caties-Closet-iOS" */;
 			buildPhases = (
+				968A92C4545FFD61F5A8E2F4 /* [CP] Check Pods Manifest.lock */,
 				53208B5A222472C500F58E05 /* Sources */,
 				53208B5B222472C500F58E05 /* Frameworks */,
 				53208B5C222472C500F58E05 /* Resources */,
+				9585A87BCD37C4B56BA326E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,12 +234,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */,
+				48EC90AE22DE329700B8912E /* GoogleService-Info.plist in Resources */,
 				53208B69222472C700F58E05 /* Assets.xcassets in Resources */,
 				53208B67222472C500F58E05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9585A87BCD37C4B56BA326E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968A92C4545FFD61F5A8E2F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caties-Closet-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53208B5A222472C500F58E05 /* Sources */ = {
@@ -384,6 +456,7 @@
 		};
 		53208B71222472C700F58E05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCAC066A9CE5B4B27AB71238 /* Pods-Caties-Closet-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -396,11 +469,11 @@
 				);
 				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
 					"$(inherited)",
-					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Caties-Closet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -411,6 +484,7 @@
 		};
 		53208B72222472C700F58E05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127A504177D5F82FB4422987 /* Pods-Caties-Closet-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -423,11 +497,11 @@
 				);
 				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
 					"$(inherited)",
-					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Caties-Closet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class ConfirmSignUpViewController: UIViewController {
 
@@ -16,6 +17,13 @@ class ConfirmSignUpViewController: UIViewController {
     @IBOutlet weak var confirmEmail: UILabel!
     @IBOutlet weak var confirmPassword: UILabel!
 
+    let userDefaults = UserDefaults.standard
+
+    @IBAction func confirm(_ sender: Any) {
+        userDefaults.set(0, forKey:"totalBoxesDB")
+        userDefaults.set(0, forKey:"totalTimesDB")
+        userDefaults.set(0, forKey:"totalMoneyDB")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +37,10 @@ class ConfirmSignUpViewController: UIViewController {
         confirmUsername.text = usernameDB
         confirmEmail.text = emailDB
         confirmPassword.text = passwordDB
+        
 
+        
+        let ref = Database.database().reference()
+        ref.child("username").child(usernameDB!).setValue(["name":fullnameDB, "username":usernameDB, "email":emailDB, "password":passwordDB, "credit card":"", "totalBoxes":0, "totalTimes":0, "totalMoney":0.00])
     }
 }

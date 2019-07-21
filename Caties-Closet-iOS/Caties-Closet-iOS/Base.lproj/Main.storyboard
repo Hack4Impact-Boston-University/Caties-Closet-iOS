@@ -191,6 +191,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="confirm:" destination="Bgo-ZQ-Y4g" eventType="touchUpInside" id="0MV-OT-aKm"/>
                                     <segue destination="Q1K-MW-sHo" kind="showDetail" id="UUt-NV-kJW"/>
                                 </connections>
                             </button>
@@ -4240,8 +4241,6 @@ We're proof compassion can change the world.
         <image name="smilingchild" width="720" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rfo-bc-m0J"/>
-        <segue reference="y1c-rc-xm9"/>
         <segue reference="EaQ-TN-c0u"/>
         <segue reference="XKR-t1-Mqz"/>
         <segue reference="fv6-mA-wKl"/>
@@ -4252,7 +4251,7 @@ We're proof compassion can change the world.
         <segue reference="xZh-vy-G5v"/>
         <segue reference="obz-2V-E5D"/>
         <segue reference="WL7-tN-5DL"/>
-        <segue reference="r4R-bQ-lVd"/>
+        <segue reference="2jP-zL-tMh"/>
         <segue reference="m47-GB-dTi"/>
     </inferredMetricsTieBreakers>
 </document>

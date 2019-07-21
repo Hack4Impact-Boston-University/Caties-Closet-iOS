@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
 
 extension UIViewController {
     func HideKeyboard() {
@@ -25,6 +26,17 @@ extension UIViewController {
 class ViewControllerLogin: UIViewController {
 
 
+    
+    // Display error messages.
+    func displayAlert(message: String) {
+        let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        // Might be a good idea to attach handler
+        let defaultAction:UIAlertAction = UIAlertAction(title:"OK", style: UIAlertAction.Style.default, handler:nil)
+        alert.addAction(defaultAction)
+        self.present(alert,animated:true, completion:nil)
+    }
+    
+    
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
     
     @IBAction func goToSignUpPage(_ sender:UIButton) {
@@ -53,6 +65,7 @@ class ViewControllerLogin: UIViewController {
     var password = ""
     var passwordConfirmation = ""
     
+    
     // Store the new user information (we need more validations)
     @IBAction func signupPressed(_ sender: Any) {
         self.fullname = fullNameField.text!
@@ -72,6 +85,29 @@ class ViewControllerLogin: UIViewController {
             displayAlert(message: "Passwords do not match.")
             return
         }
+        
+        
+        
+        
+        // check for duplicated usernames
+        // unwrap Optional<Array<String>> -> Array<String>
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        
+        //list of all usernames stored in allUsers
+        var allUsers: [String] = tempAllUsers
+        
+        var inUsernameList = false
+        for x in allUsers {
+            if (username == x){
+                displayAlert(message: "This username has been used, please select another username.")
+                inUsernameList = true
+            }
+        }
+        if inUsernameList == false {
+            allUsers.append(username)
+        }
+        userDefaults.set(allUsers, forKey:"allUsers")
         
         // Store data with keys
         userDefaults.set(fullname, forKey:"name")
@@ -93,29 +129,51 @@ class ViewControllerLogin: UIViewController {
     @IBAction func loginPressed(_ sender: Any) {
         let username = usernameEntered.text;
         let password = passwordEntered.text;
-        let usernameDB = UserDefaults.standard.string(forKey: "username")
-        let passwordDB = UserDefaults.standard.string(forKey: "password")
+        var usernameDB: String
+        
+        
+        //unwrap Optional<Array<String>> -> Array<String>
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+
+        //list of all usernames stored in allUsers
+        let allUsers: [String] = tempAllUsers
+        
         if (username == "" || password == "") {
             displayAlert(message: "Please enter both your username and password.")
         }
-        else if (username != usernameDB || password != passwordDB) {
-            displayAlert(message: "Incorrect username or password. Please try again.")
-        }
         else {
-            performSegue(withIdentifier: "ConfirmLogIn", sender: self)
-
+            for x in allUsers {
+                
+                if (username == x) {
+                    usernameDB = username ?? ""
+                    userDefaults.set(username, forKey: "currentUser")
+                    userDefaults.synchronize()
+                    
+                    //check corresponding password
+                    let ref = Database.database().reference()
+                    ref.child("username/" + usernameDB + "/password").observeSingleEvent(of: .value, with: { (snapshot) in
+                        let currentPassword = snapshot.value as! String
+                        print("hi" ,currentPassword)
+                        if (password == currentPassword) {
+                            self.userDefaults.set(currentPassword, forKey:"currentPassword")
+                        }
+                        else {
+                            self.displayAlert(message: "Incorrect password.")
+                        }
+                        
+                    })
+                    performSegue(withIdentifier: "ConfirmLogIn", sender: self)
+                    break
+                }
+            }
+            displayAlert(message: "Incorrect username.")
         }
+
+
 
     }
     
-    // Display error messages.
-    func displayAlert(message: String) {
-        let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertController.Style.alert)
-        // Might be a good idea to attach handler
-        let defaultAction:UIAlertAction = UIAlertAction(title:"OK", style: UIAlertAction.Style.default, handler:nil)
-        alert.addAction(defaultAction)
-        self.present(alert,animated:true, completion:nil)
-    }
     
     
     @IBOutlet weak var newFullNameField: UITextField!
@@ -159,6 +217,32 @@ class ViewControllerLogin: UIViewController {
         super.viewDidLoad()
         
         self.HideKeyboard()
+        
+        
+        // check if username is in database
+        let ref = Database.database().reference()
+        
+        var userList = [String]()
+        ref.child("username").observeSingleEvent(of: .value, with: { snapshot in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let userDict = snap.value as! [String: Any]
+                
+                //unwrap Optional<String> -> String
+                //need if-else
+                if (userDict.values.compactMap{$0 as? String}[0] != "") {
+                    let users = userDict.values.compactMap{$0 as? String}[0]
+                    userList.append(users) //find all usernames in firebase and append into userList
+                }
+                else {
+                    let users = userDict.values.compactMap{$0 as? String}[1]
+                    userList.append(users)
+                }
+                
+                self.userDefaults.set(userList, forKey:"allUsers")
+                self.userDefaults.synchronize()
+            }
+        })
         
     }
     

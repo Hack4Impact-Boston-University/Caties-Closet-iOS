@@ -1,0 +1,6 @@
+framework module Pods_Caties_Closet_iOS {
+  umbrella header "Pods-Caties-Closet-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
