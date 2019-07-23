@@ -121,7 +121,7 @@ class ViewControllerLogin: UIViewController {
                     self.displayAlert(message: "Could not sign in user")
                     print(error!)
                 } else {
-                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
+                    self.performSegue(withIdentifier: "ConfirmLogin", sender: self)
                 }
             }
         }
