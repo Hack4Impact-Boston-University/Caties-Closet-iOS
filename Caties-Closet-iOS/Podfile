@@ -8,5 +8,6 @@ target 'Caties-Closet-iOS' do
   # Pods for Caties-Closet-iOS
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
 end

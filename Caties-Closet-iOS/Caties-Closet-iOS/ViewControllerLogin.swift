@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 import Firebase
+import FirebaseAuth
 
 extension UIViewController {
     func HideKeyboard() {
@@ -25,8 +26,6 @@ extension UIViewController {
 
 class ViewControllerLogin: UIViewController {
 
-
-    
     // Display error messages.
     func displayAlert(message: String) {
         let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertController.Style.alert)
@@ -84,40 +83,24 @@ class ViewControllerLogin: UIViewController {
         if(password != passwordConfirmation) {
             displayAlert(message: "Passwords do not match.")
             return
+        } else if (password.count < 6 ){
+            displayAlert(message: "Password must be at least 6 characters long")
         }
         
-        
-        
-        
-        // check for duplicated usernames
-        // unwrap Optional<Array<String>> -> Array<String>
-        let tempAllUsers: [String]!
-        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
-        
-        //list of all usernames stored in allUsers
-        var allUsers: [String] = tempAllUsers
-        
-        var inUsernameList = false
-        for x in allUsers {
-            if (username == x){
-                displayAlert(message: "This username has been used, please select another username.")
-                inUsernameList = true
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if error != nil {
+                print(error!)
+                self.displayAlert(message: "Could not register new user")
+            } else {
+                do {
+                    try Auth.auth().signOut()
+                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
+                } catch let signOutError as NSError {
+                    print ("Error signing out: %@", signOutError)
+                    self.displayAlert(message: "Could not sign out user")
+                }
             }
         }
-        if inUsernameList == false {
-            allUsers.append(username)
-        }
-        userDefaults.set(allUsers, forKey:"allUsers")
-        
-        // Store data with keys
-        userDefaults.set(fullname, forKey:"name")
-        userDefaults.set(username, forKey:"username")
-        userDefaults.set(password, forKey:"password")
-        userDefaults.set(email, forKey:"email")
-
-        userDefaults.synchronize()
-        
-        performSegue(withIdentifier: "ConfirmSignUp", sender: self)
     }
     
     
@@ -127,47 +110,20 @@ class ViewControllerLogin: UIViewController {
     @IBOutlet weak var passwordEntered: UITextField!
     
     @IBAction func loginPressed(_ sender: Any) {
-        let username = usernameEntered.text;
-        let password = passwordEntered.text;
-        var usernameDB: String
+        let email = usernameEntered.text!;
+        let password = passwordEntered.text!;        
         
-        
-        //unwrap Optional<Array<String>> -> Array<String>
-        let tempAllUsers: [String]!
-        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
-
-        //list of all usernames stored in allUsers
-        let allUsers: [String] = tempAllUsers
-        
-        if (username == "" || password == "") {
+        if (email == "" || password == "") {
             displayAlert(message: "Please enter both your username and password.")
-        }
-        else {
-            for x in allUsers {
-                
-                if (username == x) {
-                    usernameDB = username ?? ""
-                    userDefaults.set(username, forKey: "currentUser")
-                    userDefaults.synchronize()
-                    
-                    //check corresponding password
-                    let ref = Database.database().reference()
-                    ref.child("username/" + usernameDB + "/password").observeSingleEvent(of: .value, with: { (snapshot) in
-                        let currentPassword = snapshot.value as! String
-                        print("hi" ,currentPassword)
-                        if (password == currentPassword) {
-                            self.userDefaults.set(currentPassword, forKey:"currentPassword")
-                        }
-                        else {
-                            self.displayAlert(message: "Incorrect password.")
-                        }
-                        
-                    })
-                    performSegue(withIdentifier: "ConfirmLogIn", sender: self)
-                    break
+        } else {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if( error != nil){
+                    self.displayAlert(message: "Could not sign in user")
+                    print(error!)
+                } else {
+                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
                 }
             }
-            displayAlert(message: "Incorrect username.")
         }
 
 
