@@ -14,10 +14,8 @@ import FirebaseAuth
 extension UIViewController {
     func HideKeyboard() {
         let Tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
-        
         view.addGestureRecognizer(Tap)
     }
-    
     @objc func DismissKeyboard () {
         view.endEditing(true)
     }
@@ -35,14 +33,12 @@ class ViewControllerLogin: UIViewController {
         self.present(alert,animated:true, completion:nil)
     }
     
-    
+//    Segues
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
-    
     @IBAction func goToSignUpPage(_ sender:UIButton) {
         let next = storyboard!.instantiateViewController(withIdentifier: "SignUpPage")
         self.present(next,animated: true, completion: nil)
     }
-    
     @IBAction func goToLoginPage(_ sender:UIButton) {
         let next = storyboard!.instantiateViewController(withIdentifier: "LoginPage")
         self.present(next,animated: true, completion: nil)
@@ -51,7 +47,6 @@ class ViewControllerLogin: UIViewController {
     let userDefaults = UserDefaults.standard
     
     /* Signup */
-    
     @IBOutlet weak var fullNameField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -79,33 +74,18 @@ class ViewControllerLogin: UIViewController {
             return
         }
         
-        // If Password and PasswordConfirmation do not match
-        if(password != passwordConfirmation) {
-            displayAlert(message: "Passwords do not match.")
+        if valid_user(email: email) && valid_password(password: password, passwordConfirmation: passwordConfirmation) {
+    
+            create_firebase_user(user: email, password: password)
+            createDatabaseUser(fullname: fullname, username: email, password: password, email: email)
+            self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
+        } else{
             return
-        } else if (password.count < 6 ){
-            displayAlert(message: "Password must be at least 6 characters long")
-        }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            if error != nil {
-                print(error!)
-                self.displayAlert(message: "Could not register new user")
-            } else {
-                do {
-                    try Auth.auth().signOut()
-                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
-                } catch let signOutError as NSError {
-                    print ("Error signing out: %@", signOutError)
-                    self.displayAlert(message: "Could not sign out user")
-                }
-            }
         }
     }
     
     
     /* Login */
-    
     @IBOutlet weak var usernameEntered: UITextField!
     @IBOutlet weak var passwordEntered: UITextField!
     
@@ -116,18 +96,8 @@ class ViewControllerLogin: UIViewController {
         if (email == "" || password == "") {
             displayAlert(message: "Please enter both your username and password.")
         } else {
-            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                if( error != nil){
-                    self.displayAlert(message: "Could not sign in user")
-                    print(error!)
-                } else {
-                    self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
-                }
-            }
+            signInUser(username: email, password: password)
         }
-
-
-
     }
     
     
@@ -173,8 +143,7 @@ class ViewControllerLogin: UIViewController {
         super.viewDidLoad()
         
         self.HideKeyboard()
-        
-        
+
         // check if username is in database
         let ref = Database.database().reference()
         
@@ -201,6 +170,96 @@ class ViewControllerLogin: UIViewController {
         })
         
     }
+    
+    
+    
+    func valid_user(email: String) -> Bool {
+        // check for duplicated usernames
+        // unwrap Optional<Array<String>> -> Array<String>
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        
+        //list of all usernames stored in allUsers
+        var allUsers: [String] = tempAllUsers
+        
+        for x in allUsers {
+            if (username == x){
+                displayAlert(message: "This username has been used, please select another username.")
+                return false
+            }
+        }
+        
+        allUsers.append(username)
+        return true
+    }
+    
+    func valid_password(password: String, passwordConfirmation: String) -> Bool {
+        if(password != passwordConfirmation) {
+            displayAlert(message: "Passwords do not match.")
+            return false
+        } else if (password.count < 6 ){
+            displayAlert(message: "Password must be at least 6 characters long")
+            return true
+        } else {
+            return true
+        }
+    }
+    
+    func create_firebase_user(user: String, password: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if error != nil {
+                print(error!)
+                self.displayAlert(message: "Could not register new user")
+            } else {
+                do {
+                    try Auth.auth().signOut()
+                } catch let signOutError as NSError {
+                    print ("Error signing out: %@", signOutError)
+                    self.displayAlert(message: "Could not sign out user")
+                }
+            }
+        }
+    }
+    
+    func createDatabaseUser(fullname: String, username: String, password: String, email: String) {
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        
+        //list of all usernames stored in allUsers
+        var allUsers: [String] = tempAllUsers
+        
+        var inUsernameList = false
+        for x in allUsers {
+            if (username == x){
+                displayAlert(message: "This username has been used, please select another username.")
+                inUsernameList = true
+            }
+        }
+        if inUsernameList == false {
+            allUsers.append(username)
+        }
+        userDefaults.set(allUsers, forKey:"allUsers")
+        
+        // Store data with keys
+        userDefaults.set(fullname, forKey:"name")
+        userDefaults.set(username, forKey:"username")
+        userDefaults.set(password, forKey:"password")
+        userDefaults.set(email, forKey:"email")
+        
+        userDefaults.synchronize()
+    }
+    
+    func signInUser(username: String, password: String) {
+        Auth.auth().signIn(withEmail: username, password: password) { (user, error) in
+            if( error != nil){
+                self.displayAlert(message: "Could not sign in user")
+                print(error!)
+            } else {
+                self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
+            }
+        }
+    }
+    
     
 
 }
