@@ -11,6 +11,7 @@ import FBSDKLoginKit
 import Firebase
 import FirebaseAuth
 
+
 extension UIViewController {
     func HideKeyboard() {
         let Tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
@@ -20,7 +21,6 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
-
 
 class ViewControllerLogin: UIViewController {
 
@@ -46,6 +46,9 @@ class ViewControllerLogin: UIViewController {
 
     let userDefaults = UserDefaults.standard
     
+    
+    
+    
     /* Signup */
     @IBOutlet weak var fullNameField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
@@ -59,7 +62,6 @@ class ViewControllerLogin: UIViewController {
     var password = ""
     var passwordConfirmation = ""
     
-    
     // Store the new user information (we need more validations)
     @IBAction func signupPressed(_ sender: Any) {
         self.fullname = fullNameField.text!
@@ -67,22 +69,27 @@ class ViewControllerLogin: UIViewController {
         self.email = emailField.text!
         self.password = passwordField.text!
         self.passwordConfirmation = passwordConfirmationField.text!
-        
         // If incomplete fields exist
         if(fullname == "" || username == "" || email == "" || password == "" || passwordConfirmation == "") {
             displayAlert(message: "Please fill out all the information.")
             return
         }
-        
         if valid_user(email: email) && valid_password(password: password, passwordConfirmation: passwordConfirmation) {
     
             create_firebase_user(user: email, password: password)
-            createDatabaseUser(fullname: fullname, username: email, password: password, email: email)
+            let firebaseID = Auth.auth().currentUser!.uid
+            createDatabaseUser(fullname: fullname, username: firebaseID, password: password, email: email)
             self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
         } else{
+            displayAlert(message: "That email is already registered with Caties's Closet")
             return
         }
     }
+    
+    
+    
+    
+    
     
     
     /* Login */
@@ -108,68 +115,44 @@ class ViewControllerLogin: UIViewController {
     @IBOutlet weak var previousPasswordField: UITextField!
     @IBOutlet weak var newPasswordField: UITextField!
     
-    @IBAction func EditAccount(_ sender: Any) {
-        let newfullname = newFullNameField.text
-        let newusername = newUserNameField.text
-        let newemail = newEmailField.text
-        let previouspassword = previousPasswordField.text
-        let newpassword = newPasswordField.text
-        
-        // If incomplete fields exist
-        if(newfullname == "" || newusername == "" || newemail == "" || previouspassword == "" || newpassword == "") {
-            displayAlert(message: "Please fill out all the information.")
-            return
-        }
-        
-        // If Password and PasswordConfirmation do not match
-        if(previouspassword != UserDefaults.standard.string(forKey: "password")) {
-            displayAlert(message: "Previous password incorrect.")
-            return
-        }
-        
-        // Store data with keys
-        userDefaults.set(newfullname, forKey:"name")
-        userDefaults.set(newusername, forKey:"username")
-        userDefaults.set(newemail, forKey:"email")
-        userDefaults.set(newpassword, forKey:"password")
-        userDefaults.synchronize()
-        
-
-        performSegue(withIdentifier: "ConfirmEditProfile", sender: self)
-    }
+//    @IBAction func EditAccount(_ sender: Any) {
+//        let newfullname = newFullNameField.text
+//        let newusername = newUserNameField.text
+//        let newemail = newEmailField.text
+//        let previouspassword = previousPasswordField.text
+//        let newpassword = newPasswordField.text
+//
+//        // If incomplete fields exist
+//        if(newfullname == "" || newusername == "" || newemail == "" || previouspassword == "" || newpassword == "") {
+//            displayAlert(message: "Please fill out all the information.")
+//            return
+//        }
+//
+//        // If Password and PasswordConfirmation do not match
+//        if(previouspassword != UserDefaults.standard.string(forKey: "password")) {
+//            displayAlert(message: "Previous password incorrect.")
+//            return
+//        }
+//
+//        // Store data with keys
+//        userDefaults.set(newfullname, forKey:"name")
+//        userDefaults.set(newusername, forKey:"username")
+//        userDefaults.set(newemail, forKey:"email")
+//        userDefaults.set(newpassword, forKey:"password")
+//        userDefaults.synchronize()
+//
+//
+//        performSegue(withIdentifier: "ConfirmEditProfile", sender: self)
+//    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.HideKeyboard()
-
-        // check if username is in database
-        let ref = Database.database().reference()
-        
-        var userList = [String]()
-        ref.child("username").observeSingleEvent(of: .value, with: { snapshot in
-            for child in snapshot.children {
-                let snap = child as! DataSnapshot
-                let userDict = snap.value as! [String: Any]
-                
-                //unwrap Optional<String> -> String
-                //need if-else
-                if (userDict.values.compactMap{$0 as? String}[0] != "") {
-                    let users = userDict.values.compactMap{$0 as? String}[0]
-                    userList.append(users) //find all usernames in firebase and append into userList
-                }
-                else {
-                    let users = userDict.values.compactMap{$0 as? String}[1]
-                    userList.append(users)
-                }
-                
-                self.userDefaults.set(userList, forKey:"allUsers")
-                self.userDefaults.synchronize()
-            }
-        })
-        
     }
+    
+    
     
     
     
@@ -259,6 +242,7 @@ class ViewControllerLogin: UIViewController {
             }
         }
     }
+    
     
     
 

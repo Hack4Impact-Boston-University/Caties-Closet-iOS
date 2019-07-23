@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class ComputeDonation : UIViewController {
     
+    let firebaseID = Auth.auth().currentUser!.uid
     
     var totalTimes = UserDefaults.standard.integer(forKey: "totalTimesDB")
     var totalBoxes = UserDefaults.standard.integer(forKey: "totalBoxesDB")
@@ -31,8 +33,8 @@ class ComputeDonation : UIViewController {
         userDefaults.synchronize()
 
         let ref = Database.database().reference()
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalTimes").setValue(totalTimes)
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalBoxes").setValue(totalBoxes)
+        ref.child("username/" + (firebaseID) + "/totalTimes").setValue(totalTimes)
+        ref.child("username/" + (firebaseID) + "/totalBoxes").setValue(totalBoxes)
         
     }
     
@@ -46,8 +48,8 @@ class ComputeDonation : UIViewController {
         userDefaults.synchronize()
         
         let ref = Database.database().reference()
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalTimes").setValue(totalTimes)
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalBoxes").setValue(totalBoxes)
+        ref.child("username/" + (firebaseID) + "/totalTimes").setValue(totalTimes)
+        ref.child("username/" + (firebaseID) + "/totalBoxes").setValue(totalBoxes)
         
     }
     
@@ -61,8 +63,8 @@ class ComputeDonation : UIViewController {
         userDefaults.synchronize()
         
         let ref = Database.database().reference()
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalTimes").setValue(totalTimes)
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalMoney").setValue(totalMoney)
+        ref.child("username/" + (firebaseID) + "/totalTimes").setValue(totalTimes)
+        ref.child("username/" + (firebaseID) + "/totalMoney").setValue(totalMoney)
 
     }
     
@@ -70,17 +72,17 @@ class ComputeDonation : UIViewController {
     override func viewDidLoad() {
 
         let ref = Database.database().reference()
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalTimes").observeSingleEvent(of: .value) {
+        ref.child("username/" + firebaseID + "/totalTimes").observeSingleEvent(of: .value) {
             (snapshot) in
             let totalTimesFirebase = snapshot.value as? [Int:Any]
             self.userDefaults.set(totalTimesFirebase, forKey:"totalTimesDB")
         }
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalBoxes").observeSingleEvent(of: .value) {
+        ref.child("username/" + firebaseID + "/totalBoxes").observeSingleEvent(of: .value) {
             (snapshot) in
             let totalBoxesFirebase = snapshot.value as? [Int:Any]
             self.userDefaults.set(totalBoxesFirebase, forKey:"totalBoxesDB")
         }
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalMoney").observeSingleEvent(of: .value) {
+        ref.child("username/" + firebaseID + "/totalMoney").observeSingleEvent(of: .value) {
             (snapshot) in
             let totalMoneyFirebase = snapshot.value as? [Double:Any]
             self.userDefaults.set(totalMoneyFirebase, forKey:"totalMoneyDB")

@@ -939,24 +939,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-fj-URa">
-                                <rect key="frame" x="134" y="291" width="34" height="34"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZnL-Gx-aDx" kind="showDetail" id="gnF-SK-scy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-89-9jL">
-                                <rect key="frame" x="173" y="291" width="41" height="34"/>
+                                <rect key="frame" x="276" y="287" width="41" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="View">
                                     <color key="titleColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Eej-aX-4hB" kind="showDetail" id="1ox-mn-z2r"/>
+                                    <segue destination="Eej-aX-4hB" kind="showDetail" id="YxE-Nj-Jn7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-9x-LZg">
@@ -1026,6 +1016,16 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-fj-URa">
+                                <rect key="frame" x="184" y="287" width="34" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZnL-Gx-aDx" kind="showDetail" id="gnF-SK-scy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -4244,14 +4244,14 @@ We're proof compassion can change the world.
     <inferredMetricsTieBreakers>
         <segue reference="EaQ-TN-c0u"/>
         <segue reference="XKR-t1-Mqz"/>
-        <segue reference="fv6-mA-wKl"/>
-        <segue reference="PwR-x5-ACS"/>
+        <segue reference="gRW-DT-Xlf"/>
+        <segue reference="vo2-aF-J3X"/>
         <segue reference="Sed-VN-icq"/>
-        <segue reference="1ox-mn-z2r"/>
+        <segue reference="YxE-Nj-Jn7"/>
         <segue reference="fzh-04-1bF"/>
         <segue reference="xZh-vy-G5v"/>
         <segue reference="obz-2V-E5D"/>
-        <segue reference="PtV-o2-OJH"/>
+        <segue reference="YG3-md-srH"/>
         <segue reference="r4R-bQ-lVd"/>
         <segue reference="m47-GB-dTi"/>
     </inferredMetricsTieBreakers>
