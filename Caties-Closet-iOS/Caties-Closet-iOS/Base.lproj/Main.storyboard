@@ -72,7 +72,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImpactScreen" translatesAutoresizingMaskIntoConstraints="NO" id="P7J-1r-Sn3">
-                                <rect key="frame" x="9" y="164" width="356" height="366"/>
+                                <rect key="frame" x="9" y="164" width="356" height="366.00000000000011"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="356" id="5AI-h6-IcG"/>
                                     <constraint firstAttribute="height" constant="366" id="nGY-kK-P1U"/>
@@ -2238,7 +2238,7 @@ Anyone over the age of 13!</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hF4-LO-SMN" kind="showDetail" id="PtV-o2-OJH"/>
+                                    <segue destination="hF4-LO-SMN" kind="showDetail" identifier="signOut" id="PtV-o2-OJH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrM-la-EF3">
@@ -2250,7 +2250,7 @@ Anyone over the age of 13!</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="57i-bH-00D"/>
+                                    <action selector="signOut:" destination="Eej-aX-4hB" eventType="touchUpInside" id="aNH-l9-YjG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cre-nl-Nst">
@@ -2289,6 +2289,7 @@ Anyone over the age of 13!</string>
                         <outlet property="confirmNewFullName" destination="Cre-nl-Nst" id="cPu-0n-dNx"/>
                         <outlet property="confirmNewPassword" destination="o1P-dK-H6A" id="Aww-rZ-dpo"/>
                         <outlet property="confirmNewUsername" destination="6P4-6T-5ca" id="nz2-GX-HmL"/>
+                        <outlet property="signOut" destination="hrM-la-EF3" id="FId-tK-QCa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Es-8z-zdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3736,7 +3737,7 @@ We're proof compassion can change the world.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsThird" translatesAutoresizingMaskIntoConstraints="NO" id="FUO-WO-kfs">
-                                <rect key="frame" x="22.5" y="127" width="330" height="292"/>
+                                <rect key="frame" x="22.5" y="127" width="330.00000000000023" height="292"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="292" id="STG-y2-jaE"/>
                                     <constraint firstAttribute="width" constant="330" id="sZQ-7U-tde"/>
@@ -3803,7 +3804,7 @@ We're proof compassion can change the world.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsFourth" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-Yh-Ean">
-                                <rect key="frame" x="40.5" y="149" width="294" height="275"/>
+                                <rect key="frame" x="40.5" y="149" width="294" height="275.00000000000011"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="Ney-X1-ltg"/>
                                     <constraint firstAttribute="height" constant="275" id="bdB-YA-eiG"/>
@@ -4250,8 +4251,8 @@ We're proof compassion can change the world.
         <segue reference="fzh-04-1bF"/>
         <segue reference="xZh-vy-G5v"/>
         <segue reference="obz-2V-E5D"/>
-        <segue reference="WL7-tN-5DL"/>
-        <segue reference="2jP-zL-tMh"/>
-        <segue reference="JMb-41-POK"/>
+        <segue reference="PtV-o2-OJH"/>
+        <segue reference="r4R-bQ-lVd"/>
+        <segue reference="m47-GB-dTi"/>
     </inferredMetricsTieBreakers>
 </document>

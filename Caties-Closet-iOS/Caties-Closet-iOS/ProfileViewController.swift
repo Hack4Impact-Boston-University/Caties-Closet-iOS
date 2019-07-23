@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseAuth
+
 
 class ProfileViewController: UIViewController {
     
@@ -33,4 +36,19 @@ class ProfileViewController: UIViewController {
          confirmNewPassword.text = passwordDB
         
     }
+    
+    @IBAction func signOut(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "signOut", sender: self)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            let alertController = UIAlertController(title: "Could not Sign out user", message:
+                "", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
 }
