@@ -88,17 +88,20 @@ class ViewControllerLogin: UIViewController {
         }
         
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            if error != nil {
+            if (error != nil) {
                 print(error!)
                 self.displayAlert(message: "Could not register new user")
             } else {
-                do {
-                    try Auth.auth().signOut()
-                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
-                } catch let signOutError as NSError {
-                    print ("Error signing out: %@", signOutError)
-                    self.displayAlert(message: "Could not sign out user")
-                }
+                print("********************\nRegistered User")
+            }
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if(error != nil){
+                print(error!)
+                self.displayAlert(message: "Could not sign in")
+            } else {
+                print("******************\nUser signed in")
             }
         }
     }
