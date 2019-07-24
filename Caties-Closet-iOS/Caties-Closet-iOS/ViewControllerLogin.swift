@@ -41,11 +41,23 @@ class ViewControllerLogin: UIViewController {
     @IBAction func goToSignUpPage(_ sender:UIButton) {
         let next = storyboard!.instantiateViewController(withIdentifier: "SignUpPage")
         self.present(next,animated: true, completion: nil)
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            self.displayAlert(message: "Could not sign out user")
+        }
     }
     
     @IBAction func goToLoginPage(_ sender:UIButton) {
         let next = storyboard!.instantiateViewController(withIdentifier: "LoginPage")
         self.present(next,animated: true, completion: nil)
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            self.displayAlert(message: "Could not sign out user")
+        }
     }
 
     let userDefaults = UserDefaults.standard
@@ -119,26 +131,25 @@ class ViewControllerLogin: UIViewController {
     
     @IBAction func loginPressed(_ sender: Any) {
         let email = usernameEntered.text!;
-        let password = passwordEntered.text!;        
+        let password = passwordEntered.text!;
         
         if (email == "" || password == "") {
             displayAlert(message: "Please enter both your username and password.")
-        } else {
-            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                if( error != nil){
-                    self.displayAlert(message: "Could not sign in user")
-                    print(error!)
-                } else {
-                    print("**********************************/nSigned in. Moving into segue")
-                    let ID = Auth.auth().currentUser?.uid
-                    print(ID!)
-                    self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
-                }
-            }
+            return
         }
         
-
-
+        Auth.auth().signIn(withEmail: email, password: password) {
+            (user, error) in
+            
+            if( error != nil){
+                self.displayAlert(message: "Could not sign in user")
+                print(error!)
+            } else {
+                    self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
+            }
+        }
+        print(Auth.auth().currentUser?.uid)
+        print("*******************\nOutide")
     }
     
     

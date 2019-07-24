@@ -26,30 +26,29 @@ class ConfirmDonation: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
-
-        let ref = Database.database().reference()
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
         let firebaseID = Auth.auth().currentUser?.uid
-        
-        ref.child("username/" + "yvM5lAmUdAeggdAooUUNjeZIOuq2" + "/totalTimes").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalTimesDB = snapshot.value as! String
-            self.total.text = String(totalTimesDB)
-            self.userDefaults.set(totalTimesDB, forKey:"totalTimesDB")
+
+        ref.child("username").child(firebaseID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            let totalTimes = snapshot.value as! Int
+            print("*****************************\n"+String(totalTimes))
+        }) { (error) in
+            print(error.localizedDescription)
         }
-        ref.child("username/" + firebaseID! + "/totalBoxes").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalBoxesDB = snapshot.value as! Int
-            self.boxes.text = String(totalBoxesDB)
-            self.userDefaults.set(totalBoxesDB, forKey:"totalBoxesDB")
-        }
-        ref.child("username/" + firebaseID! + "/totalMoney").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalMoneyDB = snapshot.value as! Double
-            self.money.text = String(totalMoneyDB)
-            self.userDefaults.set(totalMoneyDB, forKey:"totalMoneyDB")
-        }
+//        ref.child("username/" + firebaseID! + "/totalBoxes").observeSingleEvent(of: .value) {
+//            (snapshot) in
+//            let totalBoxesDB = snapshot.value as! Int
+//            self.boxes.text = String(totalBoxesDB)
+//            self.userDefaults.set(totalBoxesDB, forKey:"totalBoxesDB")
+//        }
+//        ref.child("username/" + firebaseID! + "/totalMoney").observeSingleEvent(of: .value) {
+//            (snapshot) in
+//            let totalMoneyDB = snapshot.value as! Double
+//            self.money.text = String(totalMoneyDB)
+//            self.userDefaults.set(totalMoneyDB, forKey:"totalMoneyDB")
+//        }
         
         
     }
