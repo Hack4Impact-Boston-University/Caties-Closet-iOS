@@ -96,14 +96,19 @@ class ViewControllerLogin: UIViewController {
             }
         }
         
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            if(error != nil){
-                print(error!)
-                self.displayAlert(message: "Could not sign in")
-            } else {
-                print("******************\nUser signed in")
-            }
+        // getting ID for datavase
+        let firebaseID = Auth.auth().currentUser?.uid
+        print("*********************\n"+firebaseID!)
+        createDBAccount(fullname: fullname, username: firebaseID!, email: email)
+        //signing out
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            self.displayAlert(message: "Could not sign out user")
         }
+        // moving to screen
+        performSegue(withIdentifier: "ConfirmSignUp", sender: self)
     }
     
     
@@ -169,6 +174,21 @@ class ViewControllerLogin: UIViewController {
         
 
         performSegue(withIdentifier: "ConfirmEditProfile", sender: self)
+    }
+    
+    func createDBAccount(fullname: String, username: String, email:String) {
+
+        
+        // Store data with keys
+        userDefaults.set(fullname, forKey:"name")
+        userDefaults.set(username, forKey:"username")
+        userDefaults.set("", forKey:"password")
+        userDefaults.set(email, forKey:"email")
+        userDefaults.set(0, forKey: "totalMoney")
+        userDefaults.set(0, forKey: "totalTimes")
+        userDefaults.set(0, forKey: "totalBoxes")
+        
+        userDefaults.synchronize()
     }
     
     
