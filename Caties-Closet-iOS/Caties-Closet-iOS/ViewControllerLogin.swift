@@ -129,11 +129,14 @@ class ViewControllerLogin: UIViewController {
                     self.displayAlert(message: "Could not sign in user")
                     print(error!)
                 } else {
-                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
+                    print("**********************************/nSigned in. Moving into segue")
+                    let ID = Auth.auth().currentUser?.uid
+                    print(ID!)
+                    self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
                 }
             }
         }
-
+        
 
 
     }

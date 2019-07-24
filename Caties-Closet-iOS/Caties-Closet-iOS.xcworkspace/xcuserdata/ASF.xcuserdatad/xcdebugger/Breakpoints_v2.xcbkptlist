@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Caties-Closet-iOS/ViewControllerLogin.swift"
-            timestampString = "585685033.449244"
+            timestampString = "585692327.874541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Caties-Closet-iOS/ViewControllerLogin.swift"
-            timestampString = "585685033.449843"
+            timestampString = "585692327.874629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -70,16 +70,111 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Caties-Closet-iOS/ViewControllerLogin.swift"
-            timestampString = "585685033.450173"
+            timestampString = "585692327.874689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "signupPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caties-Closet-iOS/ConfirmDonation.swift"
+            timestampString = "585692327.87474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ConfirmDonation"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caties_Closet_iOS.ConfirmDonation.firebaseID.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Caties-Closet-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ASF/Desktop/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/ConfirmDonation.swift"
+                  timestampString = "585691748.020696"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caties_Closet_iOS.ConfirmDonation.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Caties_Closet_iOS.ConfirmDonation"
+                  moduleName = "Caties-Closet-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ASF/Desktop/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/ConfirmDonation.swift"
+                  timestampString = "585691748.025789"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "235">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caties_Closet_iOS.ConfirmDonation.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Caties_Closet_iOS.ConfirmDonation&gt;"
+                  moduleName = "Caties-Closet-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ASF/Desktop/Caties-Closet-iOS/Caties-Closet-iOS/Caties-Closet-iOS/ConfirmDonation.swift"
+                  timestampString = "585691748.028756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caties-Closet-iOS/ConfirmDonation.swift"
+            timestampString = "585692327.875113"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caties-Closet-iOS/ConfirmDonation.swift"
+            timestampString = "585692327.875358"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
