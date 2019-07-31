@@ -20,9 +20,6 @@ class ConfirmSignUpViewController: UIViewController {
     let userDefaults = UserDefaults.standard
 
     @IBAction func confirm(_ sender: Any) {
-        userDefaults.set(0, forKey:"totalBoxesDB")
-        userDefaults.set(0, forKey:"totalTimesDB")
-        userDefaults.set(0, forKey:"totalMoneyDB")
     }
     
     override func viewDidLoad() {

@@ -119,7 +119,9 @@ class ViewControllerLogin: UIViewController {
                     self.displayAlert(message: "Could not sign in user")
                     print(error!)
                 } else {
-                    self.performSegue(withIdentifier: "ConfirmSignUp", sender: self)
+                    let firebaseID = Auth.auth().currentUser?.email
+                    print("********************\n"+firebaseID!)
+                    self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
                 }
             }
         }
@@ -171,7 +173,7 @@ class ViewControllerLogin: UIViewController {
         super.viewDidLoad()
         
         self.HideKeyboard()
-        
+        signOut()
         
         // check if username is in database
         let ref = Database.database().reference()
@@ -226,6 +228,15 @@ class ViewControllerLogin: UIViewController {
         userDefaults.set(email, forKey:"email")
         
         userDefaults.synchronize()
+    }
+    
+    func signOut()  {
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            self.displayAlert(message: "Could not sign out user")
+        }
     }
     
 
