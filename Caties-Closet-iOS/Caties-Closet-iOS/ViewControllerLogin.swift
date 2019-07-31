@@ -96,14 +96,9 @@ class ViewControllerLogin: UIViewController {
             }
         }
         
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            if(error != nil){
-                print(error!)
-                self.displayAlert(message: "Could not sign in")
-            } else {
-                print("******************\nUser signed in")
-            }
-        }
+        createDBUser(fullname: fullname, email: email)
+        
+        performSegue(withIdentifier: "ConfirmSignUp", sender: self)
     }
     
     
@@ -203,6 +198,34 @@ class ViewControllerLogin: UIViewController {
             }
         })
         
+    }
+    
+    func createDBUser(fullname: String, email: String)  {
+        // check for duplicated usernames
+        // unwrap Optional<Array<String>> -> Array<String>
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        
+        //list of all usernames stored in allUsers
+        var allUsers: [String] = tempAllUsers
+        
+        var inUsernameList = false
+        for x in allUsers {
+            if (username == x){
+                displayAlert(message: "This username has been used, please select another username.")
+                inUsernameList = true
+            }
+        }
+        if inUsernameList == false {
+            allUsers.append(username)
+        }
+        userDefaults.set(allUsers, forKey:"allUsers")
+        
+        // Store data with keys
+        userDefaults.set(fullname, forKey:"name")
+        userDefaults.set(email, forKey:"email")
+        
+        userDefaults.synchronize()
     }
     
 
