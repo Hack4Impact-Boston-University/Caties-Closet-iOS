@@ -124,9 +124,10 @@ class ViewControllerLogin: UIViewController {
                     self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
                 }
             }
+            signIn(username: email)
         }
 
-
+        performSegue(withIdentifier: "ConfirmLogIn", sender: self)
 
     }
     
@@ -229,6 +230,30 @@ class ViewControllerLogin: UIViewController {
         
         userDefaults.synchronize()
     }
+    
+    func signIn(username: String) {
+        var usernameDB: String
+        
+        
+        //unwrap Optional<Array<String>> -> Array<String>
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        
+        //list of all usernames stored in allUsers
+        let allUsers: [String] = tempAllUsers
+        
+            for x in allUsers {
+                
+                if (username == x) {
+                    usernameDB = username
+                    userDefaults.set(username, forKey: "currentUser")
+                    userDefaults.synchronize()
+                    return
+                    }
+                }
+        
+        }
+    
     
     func signOut()  {
         do {

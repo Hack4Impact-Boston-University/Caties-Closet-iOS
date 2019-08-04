@@ -28,32 +28,26 @@ class ConfirmDonation: UIViewController {
 
 
         let ref = Database.database().reference()
-
-        //ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalTimes").setValue(totalTimesDB)
-        //ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalBoxes").setValue(totalBoxesDB)
-        //ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalMoney").setValue(totalMoneyDB)
-
-        
-        
-        
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalTimes").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalTimesDB = snapshot.value as! Int
-            self.total.text = String(totalTimesDB)
-            self.userDefaults.set(totalTimesDB, forKey:"totalTimesDB")
-        }
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalBoxes").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalBoxesDB = snapshot.value as! Int
-            self.boxes.text = String(totalBoxesDB)
-            self.userDefaults.set(totalBoxesDB, forKey:"totalBoxesDB")
-        }
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalMoney").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalMoneyDB = snapshot.value as! Double
-            self.money.text = String(totalMoneyDB)
-            self.userDefaults.set(totalMoneyDB, forKey:"totalMoneyDB")
-        }
+        let user  = UserDefaults.standard.string(forKey: "currentUser")
+        let FBUser = Auth.auth().currentUser?.email
+//        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalTimes").observeSingleEvent(of: .value) {
+//            (snapshot) in
+//            let totalTimesDB = snapshot.value as! Int
+//            self.total.text = String(totalTimesDB)
+//            self.userDefaults.set(totalTimesDB, forKey:"totalTimesDB")
+//        }
+//        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalBoxes").observeSingleEvent(of: .value) {
+//            (snapshot) in
+//            let totalBoxesDB = snapshot.value as! Int
+//            self.boxes.text = String(totalBoxesDB)
+//            self.userDefaults.set(totalBoxesDB, forKey:"totalBoxesDB")
+//        }
+//        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalMoney").observeSingleEvent(of: .value) {
+//            (snapshot) in
+//            let totalMoneyDB = snapshot.value as! Double
+//            self.money.text = String(totalMoneyDB)
+//            self.userDefaults.set(totalMoneyDB, forKey:"totalMoneyDB")
+//        }
         
         
     }
