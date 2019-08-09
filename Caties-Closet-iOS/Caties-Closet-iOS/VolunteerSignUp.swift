@@ -1,0 +1,56 @@
+//
+//  VolunteerSignUp.swift
+//  Caties-Closet-iOS
+//
+//  Created by Cici Chen on 8/9/19.
+//  Copyright © 2019 Hack4ImpactBostonUniversity. All rights reserved.
+//
+
+import UIKit
+import FBSDKLoginKit
+import Firebase
+import FirebaseAuth
+
+
+class VolunteerSignUp: UIViewController {
+
+    // Display error messages.
+    func displayAlert(message: String) {
+        let alert: UIAlertController = UIAlertController(title:"Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        // Might be a good idea to attach handler
+        let defaultAction:UIAlertAction = UIAlertAction(title:"OK", style: UIAlertAction.Style.default, handler:nil)
+        alert.addAction(defaultAction)
+        self.present(alert,animated:true, completion:nil)
+    }
+    
+    
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var middleName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var gender: UITextField!
+    @IBOutlet weak var location: UITextField!
+    
+    @IBAction func signUp(_ sender: Any) {
+        if (firstName.text == "" || lastName.text == "" || email.text == "" || gender.text == "" ) {
+            displayAlert(message: "Please fill out all the information.")
+            return
+        }
+        
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(firstName.text, forKey:"volunteerFirstName")
+        userDefaults.set(middleName.text, forKey:"volunteerMiddleName")
+        userDefaults.set(lastName.text, forKey:"volunteerLastName")
+        userDefaults.set(email.text, forKey:"volunteerEmail")
+        userDefaults.set(gender.text, forKey:"volunteerGender")
+        userDefaults.set(location.text, forKey:"volunteerLocation")
+        userDefaults.synchronize()
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.HideKeyboard()
+    }
+}

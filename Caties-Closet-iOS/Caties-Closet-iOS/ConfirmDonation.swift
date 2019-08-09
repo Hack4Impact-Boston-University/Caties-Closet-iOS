@@ -48,12 +48,6 @@ class ConfirmDonation: UIViewController {
             self.boxes.text = String(totalBoxesDB)
             self.userDefaults.set(totalBoxesDB, forKey:"totalBoxesDB")
         }
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalMoney").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let totalMoneyDB = snapshot.value as! Double
-            self.money.text = String(totalMoneyDB)
-            self.userDefaults.set(totalMoneyDB, forKey:"totalMoneyDB")
-        }
         
         
     }

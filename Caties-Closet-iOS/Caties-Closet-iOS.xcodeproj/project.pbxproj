@@ -19,6 +19,8 @@
 		4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */; };
 		4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */; };
 		4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C822A9640700AF0A34 /* ComputeDonation.swift */; };
+		484CCC0D22FD55110040B64D /* VolunteerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CCC0C22FD55110040B64D /* VolunteerSignUp.swift */; };
+		484CCC0F22FD56F40040B64D /* ConfirmVolunteerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CCC0E22FD56F40040B64D /* ConfirmVolunteerSignUp.swift */; };
 		48550A0A22C302040049C34B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0922C302040049C34B /* Bolts.framework */; };
 		48550A0D22C3020E0049C34B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */; };
 		48550A0E22C3020E0049C34B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */; };
@@ -56,6 +58,8 @@
 		4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDonation.swift; sourceTree = "<group>"; };
 		4833B8C822A9640700AF0A34 /* ComputeDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeDonation.swift; sourceTree = "<group>"; };
+		484CCC0C22FD55110040B64D /* VolunteerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerSignUp.swift; sourceTree = "<group>"; };
+		484CCC0E22FD56F40040B64D /* ConfirmVolunteerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVolunteerSignUp.swift; sourceTree = "<group>"; };
 		48550A0922C302040049C34B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				480FB7C022C5311D00A46726 /* ShareFBViewController.swift */,
 				488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */,
 				488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */,
+				484CCC0C22FD55110040B64D /* VolunteerSignUp.swift */,
+				484CCC0E22FD56F40040B64D /* ConfirmVolunteerSignUp.swift */,
 			);
 			path = "Caties-Closet-iOS";
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 				4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */,
 				4831BBCD22A8E85300E73F6F /* ConfirmSignUpViewController.swift in Sources */,
 				481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */,
+				484CCC0D22FD55110040B64D /* VolunteerSignUp.swift in Sources */,
 				4831BBC322A84BD900E73F6F /* ConfirmLoginViewController.swift in Sources */,
 				4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */,
 				481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */,
@@ -301,6 +308,7 @@
 				488A3AF122D4EA6C0077B7F3 /* DonationFormInfo.swift in Sources */,
 				481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */,
 				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
+				484CCC0F22FD56F40040B64D /* ConfirmVolunteerSignUp.swift in Sources */,
 				4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */,
 				4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */,
 				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,

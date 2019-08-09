@@ -31,13 +31,11 @@ class Button: UIViewController {
     
     @IBAction func addOne(_ sender: Any) {
         number.add()
-        self.count += 1
+        count += 1
         userDefaults.set(count, forKey:"donationBoxesDB")
         userDefaults.synchronize()
         TotalItems.text = String(count) + " items"
         
-        var data = UserDefaults.standard.integer(forKey: "donationBoxesDB")
-        print("in database" + String(data))
     }
     @IBAction func addOne2(_ sender: Any) {
         number2.add()

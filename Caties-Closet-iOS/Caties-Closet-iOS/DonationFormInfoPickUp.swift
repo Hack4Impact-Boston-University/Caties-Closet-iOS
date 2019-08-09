@@ -36,8 +36,19 @@ class DonationFormInfoPickUp: UIViewController {
         if (name_pickUp.text == "" || phone_pickUp.text == "" || email_pickUp.text == "" || address1_pickUp.text == "" || city_pickUp.text == "" || zipCode_pickUp.text == "" || country_pickUp.text == "") {
             displayAlert(message: "Please fill out the required information.")
         }
+        
+        UserDefaults.standard.set(name_pickUp.text!, forKey:"name_pickUp")
+        UserDefaults.standard.set(phone_pickUp.text!, forKey:"phone_pickUp")
+        UserDefaults.standard.set(email_pickUp.text!, forKey:"email_pickUp")
+        UserDefaults.standard.set(address1_pickUp.text!, forKey:"address1_pickUp")
+        UserDefaults.standard.set(address2_pickUp.text!, forKey:"address2_pickUp")
+        UserDefaults.standard.set(city_pickUp.text!, forKey:"city_pickUp")
+        UserDefaults.standard.set(zipCode_pickUp.text!, forKey:"zipCode_pickUp")
+        UserDefaults.standard.set(country_pickUp.text!, forKey:"country_pickUp")
+        UserDefaults.standard.set(addtionalInfo_pickUp.text!, forKey:"addtionalInfo_pickUp")
+
+        
         performSegue(withIdentifier: "confirm_pickUp", sender: self)
-        return
     }
     
     

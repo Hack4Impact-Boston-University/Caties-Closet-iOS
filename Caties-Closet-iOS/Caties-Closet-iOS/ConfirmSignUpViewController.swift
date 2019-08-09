@@ -41,6 +41,6 @@ class ConfirmSignUpViewController: UIViewController {
 
         
         let ref = Database.database().reference()
-        ref.child("username").child(usernameDB!).setValue(["name":fullnameDB, "username":usernameDB, "email":emailDB, "password":passwordDB, "credit card":"", "totalBoxes":0, "totalTimes":0, "totalMoney":0.00])
+        ref.child("username").child(usernameDB!).setValue(["name":fullnameDB, "username":usernameDB, "email":emailDB, "totalBoxes":0, "totalTimes":0, "number of volunteers":0])
     }
 }
