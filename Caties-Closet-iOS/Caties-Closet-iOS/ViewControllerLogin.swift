@@ -117,6 +117,7 @@ class ViewControllerLogin: UIViewController {
         userDefaults.set(fullname, forKey:"name")
         userDefaults.set(username, forKey:"username")
         userDefaults.set(email, forKey:"email")
+        userDefaults.set(password, forKey:"password")
 
         userDefaults.synchronize()
         
