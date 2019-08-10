@@ -42,7 +42,7 @@ class ConfirmSignUpViewController: UIViewController {
         let passwordDB = UserDefaults.standard.string(forKey: "password")!
         
         let ref = Database.database().reference()
-        ref.child("username").child(usernameDB).setValue(["name":fullnameDB, "username":usernameDB, "email":emailDB, "totalBoxes":0, "totalTimes":0, "number of volunteers":0])
+        ref.child("username").child(usernameDB).setValue(["name":fullnameDB, "username":usernameDB, "email":emailDB, "totalItems":0, "totalTimes":0, "number of volunteers":0])
         
         
         // email authorization

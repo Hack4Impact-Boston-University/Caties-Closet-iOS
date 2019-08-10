@@ -32,6 +32,7 @@
 		488A3AF322D5563E0077B7F3 /* DonationFormInfoPickUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */; };
 		48C2D114225A774300DB373B /* DonationFormButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */; };
 		48C2D116225A789A00DB373B /* ExpandableDonationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */; };
+		48E40DCD22FEADFC0020E333 /* ViewProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E40DCC22FEADFC0020E333 /* ViewProfile.swift */; };
 		48EC90AE22DE329700B8912E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48EC90AD22DE329700B8912E /* GoogleService-Info.plist */; };
 		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
 		53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B63222472C500F58E05 /* ViewControllerLogin.swift */; };
@@ -71,6 +72,7 @@
 		488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormInfoPickUp.swift; sourceTree = "<group>"; };
 		48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormButtonViewController.swift; sourceTree = "<group>"; };
 		48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableDonationItems.swift; sourceTree = "<group>"; };
+		48E40DCC22FEADFC0020E333 /* ViewProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProfile.swift; sourceTree = "<group>"; };
 		48EC90AD22DE329700B8912E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53208B61222472C500F58E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
 				4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */,
 				4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */,
+				48E40DCC22FEADFC0020E333 /* ViewProfile.swift */,
 				53208B65222472C500F58E05 /* Main.storyboard */,
 				53208B68222472C700F58E05 /* Assets.xcassets */,
 				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
@@ -312,6 +315,7 @@
 				4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */,
 				4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */,
 				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,
+				48E40DCD22FEADFC0020E333 /* ViewProfile.swift in Sources */,
 				481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */,
 				4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */,
 				53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */,

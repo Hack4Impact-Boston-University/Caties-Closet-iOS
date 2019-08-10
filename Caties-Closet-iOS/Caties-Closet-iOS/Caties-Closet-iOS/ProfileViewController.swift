@@ -31,8 +31,8 @@ class ProfileViewController: UIViewController {
     
     @IBAction func confirmEditProfile(_ sender: Any) {
         
-        let newemail = UserDefaults.standard.string(forKey: "email")
-        let newPassword = UserDefaults.standard.string(forKey: "password")
+        let newemail = UserDefaults.standard.string(forKey: "newemail")
+        let newPassword = UserDefaults.standard.string(forKey: "newpassword")
         
         // delete previous email authorization
         let user = Auth.auth().currentUser
@@ -44,6 +44,7 @@ class ProfileViewController: UIViewController {
             }
         }
         
+        print("new email:",newemail)
         // email authorization
         Auth.auth().createUser(withEmail: newemail!, password: newPassword!) { authResult, error in
             if (error != nil) {
@@ -54,6 +55,12 @@ class ProfileViewController: UIViewController {
         let ref = Database.database().reference()
         ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/name").setValue(UserDefaults.standard.string(forKey: "name"))
         ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/email").setValue(UserDefaults.standard.string(forKey: "email"))
+        
+        
+        UserDefaults.standard.set(newemail, forKey:"email")
+        UserDefaults.standard.set(newPassword, forKey:"password")
+        UserDefaults.standard.synchronize()
+
     }
     
     override func viewDidLoad() {
@@ -61,8 +68,8 @@ class ProfileViewController: UIViewController {
         
         let fullnameDB = UserDefaults.standard.string(forKey: "name")
         let usernameDB = UserDefaults.standard.string(forKey: "currentUser")
-        let emailDB = UserDefaults.standard.string(forKey: "email")
-        let passwordDB = UserDefaults.standard.string(forKey: "password")
+        let emailDB = UserDefaults.standard.string(forKey: "newemail")
+        let passwordDB = UserDefaults.standard.string(forKey: "newpassword")
         
         
          confirmNewFullName.text = fullnameDB

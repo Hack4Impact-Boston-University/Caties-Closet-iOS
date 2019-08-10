@@ -51,7 +51,6 @@ class VolunteerSignUp: UIViewController {
 
             print("hi")
         }
-        print("BLAH",firstname == "")
         
         let userDefaults = UserDefaults.standard
         userDefaults.set(firstName.text, forKey:"volunteerFirstName")

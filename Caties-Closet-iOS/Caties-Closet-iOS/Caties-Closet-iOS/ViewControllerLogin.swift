@@ -216,13 +216,14 @@ class ViewControllerLogin: UIViewController {
         
         
         // Store data with keys
-        userDefaults.set(newfullname, forKey:"name")
-        userDefaults.set(newemail, forKey:"email")
-        userDefaults.set(newPassword, forKey:"password")
+        userDefaults.set(newfullname, forKey:"newname")
+        userDefaults.set(newemail, forKey:"newemail")
+        userDefaults.set(newPassword, forKey:"newpassword")
 
         userDefaults.synchronize()
         
 
+        print("old email", UserDefaults.standard.string(forKey: "email"))
 
         performSegue(withIdentifier: "ConfirmEditProfile", sender: self)
     }

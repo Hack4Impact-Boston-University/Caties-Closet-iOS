@@ -29,11 +29,6 @@ class ConfirmDonation: UIViewController {
 
         let ref = Database.database().reference()
 
-        //ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalTimes").setValue(totalTimesDB)
-        //ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalBoxes").setValue(totalBoxesDB)
-        //ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/totalMoney").setValue(totalMoneyDB)
-
-        
         
         
         ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalTimes").observeSingleEvent(of: .value) {
@@ -42,7 +37,7 @@ class ConfirmDonation: UIViewController {
             self.total.text = String(totalTimesDB)
             self.userDefaults.set(totalTimesDB, forKey:"totalTimesDB")
         }
-        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalBoxes").observeSingleEvent(of: .value) {
+        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/totalItems").observeSingleEvent(of: .value) {
             (snapshot) in
             let totalBoxesDB = snapshot.value as! Int
             self.boxes.text = String(totalBoxesDB)
