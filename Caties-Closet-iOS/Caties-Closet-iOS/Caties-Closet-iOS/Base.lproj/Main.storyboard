@@ -534,11 +534,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EuJ-7M-t8c">
-                                <rect key="frame" x="25" y="237" width="325" height="219"/>
+                                <rect key="frame" x="25" y="237" width="325" height="241"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="0Xl-IU-rvf"/>
-                                    <constraint firstAttribute="height" constant="219" id="IYY-m3-wyI"/>
+                                    <constraint firstAttribute="height" constant="241" id="IYY-m3-wyI"/>
                                 </constraints>
                                 <string key="text">Here are some delivery methods we suggest you to select based on your donation:                                                  📌Pick Up                                                   - Within a 30 mile radius                             - Less than 10 bags of clothing
 📌Shipping                                               - Within the United States                         - Donating less than 10 bags of clothing
@@ -565,7 +568,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPv-77-JO6">
-                                <rect key="frame" x="120" y="486" width="135" height="44"/>
+                                <rect key="frame" x="120" y="508" width="135" height="44"/>
                                 <color key="backgroundColor" red="0.30359949460000002" green="0.63191563179999999" blue="0.95019035529999996" alpha="0.89035744859999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="135" id="jaT-yA-PWh"/>
@@ -580,7 +583,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fla-Sd-J3Q">
-                                <rect key="frame" x="120" y="543" width="135" height="42"/>
+                                <rect key="frame" x="120" y="565" width="135" height="42"/>
                                 <color key="backgroundColor" red="0.7696502221" green="0.7696502221" blue="0.7696502221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Erc-9e-6f7"/>
@@ -602,7 +605,7 @@
                             <constraint firstItem="fla-Sd-J3Q" firstAttribute="top" secondItem="VPv-77-JO6" secondAttribute="bottom" constant="13" id="9EO-Ob-3CU"/>
                             <constraint firstItem="VPv-77-JO6" firstAttribute="top" secondItem="EuJ-7M-t8c" secondAttribute="bottom" constant="30" id="BSW-IA-hHT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EuJ-7M-t8c" secondAttribute="trailing" constant="9" id="CBz-JJ-QNl"/>
-                            <constraint firstItem="JYK-gt-cYK" firstAttribute="top" secondItem="fla-Sd-J3Q" secondAttribute="bottom" constant="82" id="FW3-wa-XTn"/>
+                            <constraint firstItem="JYK-gt-cYK" firstAttribute="top" secondItem="fla-Sd-J3Q" secondAttribute="bottom" constant="60" id="FW3-wa-XTn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kxs-U6-g3l" secondAttribute="trailing" constant="7" id="Ma5-yy-DMu"/>
                             <constraint firstItem="kxs-U6-g3l" firstAttribute="top" secondItem="fpe-0H-3QX" secondAttribute="bottom" constant="8" id="Mqs-Vj-0v7"/>
                             <constraint firstItem="bNg-GS-lbz" firstAttribute="top" secondItem="fpe-0H-3QX" secondAttribute="bottom" constant="78" id="PfY-dH-atH"/>
@@ -3168,7 +3171,7 @@ We're proof compassion can change the world.
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smilingchild" translatesAutoresizingMaskIntoConstraints="NO" id="6dD-jd-qFf">
-                                <rect key="frame" x="-36" y="337" width="446" height="340"/>
+                                <rect key="frame" x="-36" y="352" width="446" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="QDs-yD-KLU"/>
                                 </constraints>
@@ -3177,18 +3180,18 @@ We're proof compassion can change the world.
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="u7n-pZ-AHR" secondAttribute="trailing" id="0kA-5V-vvZ"/>
-                            <constraint firstItem="EWT-zl-QiH" firstAttribute="top" secondItem="6dD-jd-qFf" secondAttribute="bottom" constant="-487" id="9GM-fM-RRN"/>
+                            <constraint firstItem="EWT-zl-QiH" firstAttribute="top" secondItem="6dD-jd-qFf" secondAttribute="bottom" constant="-502" id="9GM-fM-RRN"/>
                             <constraint firstItem="u7n-pZ-AHR" firstAttribute="leading" secondItem="gLJ-Ga-H6V" secondAttribute="leading" id="R9x-jB-kpr"/>
                             <constraint firstItem="6dD-jd-qFf" firstAttribute="leading" secondItem="EWT-zl-QiH" secondAttribute="leading" constant="-36" id="SST-uE-0xv"/>
                             <constraint firstItem="u7n-pZ-AHR" firstAttribute="top" secondItem="28x-pD-dSI" secondAttribute="bottom" constant="15" id="UaB-h9-LQW"/>
                             <constraint firstItem="u7n-pZ-AHR" firstAttribute="trailing" secondItem="6dD-jd-qFf" secondAttribute="trailing" constant="-35" id="Xth-4z-9Wy"/>
-                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="gLJ-Ga-H6V" secondAttribute="top" constant="337" id="dlc-e3-Oa1"/>
+                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="gLJ-Ga-H6V" secondAttribute="top" constant="352" id="dlc-e3-Oa1"/>
                             <constraint firstAttribute="trailing" secondItem="28x-pD-dSI" secondAttribute="trailing" constant="102" id="dm5-mL-2iF"/>
                             <constraint firstAttribute="bottomMargin" secondItem="EWT-zl-QiH" secondAttribute="bottom" constant="373" id="fg9-A9-1Qh"/>
                             <constraint firstItem="u7n-pZ-AHR" firstAttribute="leading" secondItem="6dD-jd-qFf" secondAttribute="leading" constant="36" id="oM7-Av-vmW"/>
                             <constraint firstItem="28x-pD-dSI" firstAttribute="leading" secondItem="gLJ-Ga-H6V" secondAttribute="leading" constant="119" id="seP-0c-MPQ"/>
                             <constraint firstItem="6dD-jd-qFf" firstAttribute="trailing" secondItem="EWT-zl-QiH" secondAttribute="trailing" constant="35" id="tc5-pf-yV4"/>
-                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="u7n-pZ-AHR" secondAttribute="bottom" constant="140" id="ugf-Vc-6bU"/>
+                            <constraint firstItem="6dD-jd-qFf" firstAttribute="top" secondItem="u7n-pZ-AHR" secondAttribute="bottom" constant="155" id="ugf-Vc-6bU"/>
                             <constraint firstItem="28x-pD-dSI" firstAttribute="top" secondItem="i1c-IF-9eG" secondAttribute="bottom" constant="17" id="yQe-V3-ZNe"/>
                         </constraints>
                     </view>
@@ -3591,15 +3594,14 @@ We're proof compassion can change the world.
         <image name="smilingchild" width="720" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZCn-z8-rzy"/>
         <segue reference="EaQ-TN-c0u"/>
         <segue reference="ayZ-De-4YM"/>
         <segue reference="gRW-DT-Xlf"/>
         <segue reference="vo2-aF-J3X"/>
-        <segue reference="mCj-ho-8MD"/>
+        <segue reference="dDu-zS-yZF"/>
         <segue reference="D5R-NX-bNl"/>
         <segue reference="RqE-bQ-N60"/>
-        <segue reference="uQ0-I0-zfw"/>
+        <segue reference="Hu4-4g-wwl"/>
         <segue reference="0nd-px-m50"/>
         <segue reference="Rch-8y-Zoh"/>
         <segue reference="MsM-pI-15Q"/>
