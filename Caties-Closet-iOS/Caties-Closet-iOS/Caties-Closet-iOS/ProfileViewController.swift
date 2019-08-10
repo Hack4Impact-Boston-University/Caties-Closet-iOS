@@ -53,8 +53,8 @@ class ProfileViewController: UIViewController {
         }
         
         let ref = Database.database().reference()
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/name").setValue(UserDefaults.standard.string(forKey: "name"))
-        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/email").setValue(UserDefaults.standard.string(forKey: "email"))
+        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/name").setValue(UserDefaults.standard.string(forKey: "newname"))
+        ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/email").setValue(UserDefaults.standard.string(forKey: "newemail"))
         
         
         UserDefaults.standard.set(newemail, forKey:"email")
@@ -66,7 +66,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let fullnameDB = UserDefaults.standard.string(forKey: "name")
+        let fullnameDB = UserDefaults.standard.string(forKey: "newname")
         let usernameDB = UserDefaults.standard.string(forKey: "currentUser")
         let emailDB = UserDefaults.standard.string(forKey: "newemail")
         let passwordDB = UserDefaults.standard.string(forKey: "newpassword")
