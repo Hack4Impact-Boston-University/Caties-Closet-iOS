@@ -31,11 +31,27 @@ class VolunteerSignUp: UIViewController {
     @IBOutlet weak var gender: UITextField!
     @IBOutlet weak var location: UITextField!
     
+    var firstname = ""
+    var middlename = ""
+    var lastname = ""
+    var emailstr = ""
+    var genderstr = ""
+    var locationstr = ""
+    
     @IBAction func signUp(_ sender: Any) {
-        if (firstName.text == "" || lastName.text == "" || email.text == "" || gender.text == "" ) {
-            displayAlert(message: "Please fill out all the information.")
-            return
+        self.firstname = firstName.text!
+        self.middlename = middleName.text!
+        self.lastname = lastName.text!
+        self.emailstr = email.text!
+        self.genderstr = gender.text!
+        self.locationstr = location.text!
+        
+        if (firstname == "" || lastname == "" || emailstr == "" || genderstr == "" ) {
+            self.displayAlert(message: "Please fill out all the information.")
+
+            print("hi")
         }
+        print("BLAH",firstname == "")
         
         let userDefaults = UserDefaults.standard
         userDefaults.set(firstName.text, forKey:"volunteerFirstName")
@@ -45,6 +61,8 @@ class VolunteerSignUp: UIViewController {
         userDefaults.set(gender.text, forKey:"volunteerGender")
         userDefaults.set(location.text, forKey:"volunteerLocation")
         userDefaults.synchronize()
+        
+        performSegue(withIdentifier: "volunteerSignUp", sender: self)
 
     }
     
