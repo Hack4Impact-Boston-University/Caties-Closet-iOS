@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -262,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="1701.5999999999999" y="-599.55022488755628"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm Sign Up View Controller-->
         <scene sceneID="0uU-vc-owk">
             <objects>
-                <viewController id="Q1K-MW-sHo" sceneMemberID="viewController">
+                <viewController id="Q1K-MW-sHo" customClass="ConfirmSignUpViewController" customModule="Caties_Closet_iOS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bgy-tT-SCI"/>
                         <viewControllerLayoutGuide type="bottom" id="exs-aR-xwi"/>
@@ -3351,17 +3350,8 @@ We're proof compassion can change the world.
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ER-LM-py7">
-                                <rect key="frame" x="95" y="535" width="185" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36090935140000002" green="0.68937632739999999" blue="0.0066247710680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Confirm">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
                                 <connections>
-                                    <segue destination="Q1K-MW-sHo" kind="showDetail" id="IKl-Eh-ueR"/>
+                                    <segue destination="R7c-Ya-YyV" kind="showDetail" id="fCN-yF-PQM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkX-Ie-P6r">
@@ -3427,6 +3417,21 @@ We're proof compassion can change the world.
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXr-E4-NdM">
+                                <rect key="frame" x="95" y="542" width="185" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36090935140000002" green="0.68937632739999999" blue="0.0066247710680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="confirmSignUp"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Confirm Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmWithSender:" destination="bfe-Pu-KXX" eventType="touchUpInside" id="AZl-a8-AvG"/>
+                                    <action selector="signup:" destination="PQl-Qr-9cX" eventType="touchUpInside" id="0a4-DE-Iox"/>
+                                    <action selector="signupPressed:" destination="R7c-Ya-YyV" eventType="touchUpInside" id="woB-j3-XSf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -3435,6 +3440,7 @@ We're proof compassion can change the world.
                         <outlet property="confirmFullName" destination="UkX-Ie-P6r" id="Ksn-Dd-itA"/>
                         <outlet property="confirmPassword" destination="ugm-rF-Vhp" id="C0X-99-PL8"/>
                         <outlet property="confirmUsername" destination="Dtu-07-y7y" id="3gG-OP-X3S"/>
+                        <segue destination="Q1K-MW-sHo" kind="presentation" identifier="confirmSignUp" id="VBN-cj-oFN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHa-6F-RSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3472,6 +3478,7 @@ We're proof compassion can change the world.
         <segue reference="RqE-bQ-N60"/>
         <segue reference="PtV-o2-OJH"/>
         <segue reference="Nts-yZ-32q"/>
-        <segue reference="57i-bH-00D"/>
+        <segue reference="fCN-yF-PQM"/>
+        <segue reference="JMb-41-POK"/>
     </inferredMetricsTieBreakers>
 </document>
