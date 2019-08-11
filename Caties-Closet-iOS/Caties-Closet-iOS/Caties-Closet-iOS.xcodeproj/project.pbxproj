@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480FB7C122C5311D00A46726 /* ShareFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FB7C022C5311D00A46726 /* ShareFBViewController.swift */; };
+		481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */; };
+		481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */; };
+		481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */; };
+		481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */; };
+		481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */; };
+		4831BBC322A84BD900E73F6F /* ConfirmLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBC222A84BD900E73F6F /* ConfirmLoginViewController.swift */; };
+		4831BBC522A851BD00E73F6F /* TapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBC422A851BD00E73F6F /* TapFeature.swift */; };
+		4831BBCD22A8E85300E73F6F /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */; };
+		4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */; };
+		4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */; };
+		4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833B8C822A9640700AF0A34 /* ComputeDonation.swift */; };
+		484CCC0D22FD55110040B64D /* VolunteerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CCC0C22FD55110040B64D /* VolunteerSignUp.swift */; };
+		484CCC0F22FD56F40040B64D /* ConfirmVolunteerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CCC0E22FD56F40040B64D /* ConfirmVolunteerSignUp.swift */; };
+		48550A0A22C302040049C34B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0922C302040049C34B /* Bolts.framework */; };
+		48550A0D22C3020E0049C34B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */; };
+		48550A0E22C3020E0049C34B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */; };
+		48550A1022C302150049C34B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48550A0F22C302150049C34B /* FBSDKShareKit.framework */; };
+		4855A3B0226E6D4B00BADDB8 /* buttonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */; };
+		4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B1226E6D6200BADDB8 /* Button.swift */; };
+		4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */; };
+		488A3AF122D4EA6C0077B7F3 /* DonationFormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */; };
+		488A3AF322D5563E0077B7F3 /* DonationFormInfoPickUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */; };
+		48C2D114225A774300DB373B /* DonationFormButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */; };
+		48C2D116225A789A00DB373B /* ExpandableDonationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */; };
+		48E40DCD22FEADFC0020E333 /* ViewProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E40DCC22FEADFC0020E333 /* ViewProfile.swift */; };
+		48EC90AE22DE329700B8912E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48EC90AD22DE329700B8912E /* GoogleService-Info.plist */; };
+		53208B62222472C500F58E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B61222472C500F58E05 /* AppDelegate.swift */; };
+		53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B63222472C500F58E05 /* ViewControllerLogin.swift */; };
+		53208B67222472C500F58E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B65222472C500F58E05 /* Main.storyboard */; };
+		53208B69222472C700F58E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53208B68222472C700F58E05 /* Assets.xcassets */; };
+		53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53208B6A222472C700F58E05 /* LaunchScreen.storyboard */; };
+		53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7522247B6500F58E05 /* ViewControllerHome.swift */; };
+		53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7722247B9900F58E05 /* ViewControllerProfile.swift */; };
+		53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */; };
+		B0D209A43B575E591B6AF8B6 /* Pods_Caties_Closet_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D1A3711221FC8856E6F60F /* Pods_Caties_Closet_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		127A504177D5F82FB4422987 /* Pods-Caties-Closet-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caties-Closet-iOS.release.xcconfig"; path = "Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		480FB7C022C5311D00A46726 /* ShareFBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFBViewController.swift; sourceTree = "<group>"; };
+		481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVolunteerFAQ.swift; sourceTree = "<group>"; };
+		481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKRadioButtonsController.swift; sourceTree = "<group>"; };
+		481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKRadioButtonsController.swift; sourceTree = "<group>"; };
+		481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDonate.swift; sourceTree = "<group>"; };
+		481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableQuestions.swift; sourceTree = "<group>"; };
+		4831BBC222A84BD900E73F6F /* ConfirmLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLoginViewController.swift; sourceTree = "<group>"; };
+		4831BBC422A851BD00E73F6F /* TapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapFeature.swift; sourceTree = "<group>"; };
+		4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDonation.swift; sourceTree = "<group>"; };
+		4833B8C822A9640700AF0A34 /* ComputeDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeDonation.swift; sourceTree = "<group>"; };
+		484CCC0C22FD55110040B64D /* VolunteerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerSignUp.swift; sourceTree = "<group>"; };
+		484CCC0E22FD56F40040B64D /* ConfirmVolunteerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVolunteerSignUp.swift; sourceTree = "<group>"; };
+		48550A0922C302040049C34B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		48550A0F22C302150049C34B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonClass.swift; sourceTree = "<group>"; };
+		4855A3B1226E6D6200BADDB8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsSwipeViewController.swift; sourceTree = "<group>"; };
+		488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormInfo.swift; sourceTree = "<group>"; };
+		488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormInfoPickUp.swift; sourceTree = "<group>"; };
+		48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormButtonViewController.swift; sourceTree = "<group>"; };
+		48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableDonationItems.swift; sourceTree = "<group>"; };
+		48E40DCC22FEADFC0020E333 /* ViewProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProfile.swift; sourceTree = "<group>"; };
+		48EC90AD22DE329700B8912E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caties-Closet-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53208B61222472C500F58E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53208B63222472C500F58E05 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		53208B66222472C500F58E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53208B68222472C700F58E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53208B6B222472C700F58E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53208B6D222472C700F58E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53208B7522247B6500F58E05 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		53208B7722247B9900F58E05 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
+		53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
+		C2D1A3711221FC8856E6F60F /* Pods_Caties_Closet_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caties_Closet_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAC066A9CE5B4B27AB71238 /* Pods-Caties-Closet-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caties-Closet-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53208B5B222472C500F58E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48550A1022C302150049C34B /* FBSDKShareKit.framework in Frameworks */,
+				48550A0A22C302040049C34B /* Bolts.framework in Frameworks */,
+				48550A0D22C3020E0049C34B /* FBSDKCoreKit.framework in Frameworks */,
+				48550A0E22C3020E0049C34B /* FBSDKLoginKit.framework in Frameworks */,
+				B0D209A43B575E591B6AF8B6 /* Pods_Caties_Closet_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420C8C6910DF77BE03AFF030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCAC066A9CE5B4B27AB71238 /* Pods-Caties-Closet-iOS.debug.xcconfig */,
+				127A504177D5F82FB4422987 /* Pods-Caties-Closet-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		53208B55222472C500F58E05 = {
+			isa = PBXGroup;
+			children = (
+				53208B60222472C500F58E05 /* Caties-Closet-iOS */,
+				53208B5F222472C500F58E05 /* Products */,
+				48550A0F22C302150049C34B /* FBSDKShareKit.framework */,
+				48550A0B22C3020E0049C34B /* FBSDKCoreKit.framework */,
+				48550A0C22C3020E0049C34B /* FBSDKLoginKit.framework */,
+				48550A0922C302040049C34B /* Bolts.framework */,
+				420C8C6910DF77BE03AFF030 /* Pods */,
+				A8E6482D0B57666DEE481D69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53208B5F222472C500F58E05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53208B60222472C500F58E05 /* Caties-Closet-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				53208B61222472C500F58E05 /* AppDelegate.swift */,
+				4831BBC222A84BD900E73F6F /* ConfirmLoginViewController.swift */,
+				53208B63222472C500F58E05 /* ViewControllerLogin.swift */,
+				4831BBCC22A8E85300E73F6F /* ConfirmSignUpViewController.swift */,
+				4831BBCE22A8F14E00E73F6F /* ProfileViewController.swift */,
+				48E40DCC22FEADFC0020E333 /* ViewProfile.swift */,
+				53208B65222472C500F58E05 /* Main.storyboard */,
+				53208B68222472C700F58E05 /* Assets.xcassets */,
+				53208B6A222472C700F58E05 /* LaunchScreen.storyboard */,
+				53208B6D222472C700F58E05 /* Info.plist */,
+				48EC90AD22DE329700B8912E /* GoogleService-Info.plist */,
+				53208B7522247B6500F58E05 /* ViewControllerHome.swift */,
+				53208B7722247B9900F58E05 /* ViewControllerProfile.swift */,
+				53208B7922247BB600F58E05 /* ViewControllerAboutUs.swift */,
+				4855A3AF226E6D4B00BADDB8 /* buttonClass.swift */,
+				4855A3B1226E6D6200BADDB8 /* Button.swift */,
+				481BE899223FFC3A006042F9 /* AKRadioButtonsController.swift */,
+				481BE89B223FFC53006042F9 /* BKRadioButtonsController.swift */,
+				4855A3B3226E72E100BADDB8 /* AboutUsSwipeViewController.swift */,
+				481BE89D223FFC78006042F9 /* ViewControllerDonate.swift */,
+				481BE897223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift */,
+				481BE89F223FFC92006042F9 /* ExpandableQuestions.swift */,
+				48C2D113225A774300DB373B /* DonationFormButtonViewController.swift */,
+				48C2D115225A789A00DB373B /* ExpandableDonationItems.swift */,
+				4831BBC422A851BD00E73F6F /* TapFeature.swift */,
+				4833B8C822A9640700AF0A34 /* ComputeDonation.swift */,
+				4833B8C622A8F7B200AF0A34 /* ConfirmDonation.swift */,
+				480FB7C022C5311D00A46726 /* ShareFBViewController.swift */,
+				488A3AF022D4EA6C0077B7F3 /* DonationFormInfo.swift */,
+				488A3AF222D5563E0077B7F3 /* DonationFormInfoPickUp.swift */,
+				484CCC0C22FD55110040B64D /* VolunteerSignUp.swift */,
+				484CCC0E22FD56F40040B64D /* ConfirmVolunteerSignUp.swift */,
+			);
+			path = "Caties-Closet-iOS";
+			sourceTree = "<group>";
+		};
+		A8E6482D0B57666DEE481D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1A3711221FC8856E6F60F /* Pods_Caties_Closet_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53208B5D222472C500F58E05 /* Caties-Closet-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53208B70222472C700F58E05 /* Build configuration list for PBXNativeTarget "Caties-Closet-iOS" */;
+			buildPhases = (
+				968A92C4545FFD61F5A8E2F4 /* [CP] Check Pods Manifest.lock */,
+				53208B5A222472C500F58E05 /* Sources */,
+				53208B5B222472C500F58E05 /* Frameworks */,
+				53208B5C222472C500F58E05 /* Resources */,
+				9585A87BCD37C4B56BA326E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Caties-Closet-iOS";
+			productName = "Caties-Closet-iOS";
+			productReference = 53208B5E222472C500F58E05 /* Caties-Closet-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53208B56222472C500F58E05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Hack4ImpactBostonUniversity;
+				TargetAttributes = {
+					53208B5D222472C500F58E05 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 53208B59222472C500F58E05 /* Build configuration list for PBXProject "Caties-Closet-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53208B55222472C500F58E05;
+			productRefGroup = 53208B5F222472C500F58E05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53208B5D222472C500F58E05 /* Caties-Closet-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53208B5C222472C500F58E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53208B6C222472C700F58E05 /* LaunchScreen.storyboard in Resources */,
+				48EC90AE22DE329700B8912E /* GoogleService-Info.plist in Resources */,
+				53208B69222472C700F58E05 /* Assets.xcassets in Resources */,
+				53208B67222472C500F58E05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9585A87BCD37C4B56BA326E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caties-Closet-iOS/Pods-Caties-Closet-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968A92C4545FFD61F5A8E2F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caties-Closet-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53208B5A222472C500F58E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4855A3B4226E72E100BADDB8 /* AboutUsSwipeViewController.swift in Sources */,
+				4831BBCD22A8E85300E73F6F /* ConfirmSignUpViewController.swift in Sources */,
+				481BE89C223FFC53006042F9 /* BKRadioButtonsController.swift in Sources */,
+				484CCC0D22FD55110040B64D /* VolunteerSignUp.swift in Sources */,
+				4831BBC322A84BD900E73F6F /* ConfirmLoginViewController.swift in Sources */,
+				4833B8C922A9640700AF0A34 /* ComputeDonation.swift in Sources */,
+				481BE89A223FFC3A006042F9 /* AKRadioButtonsController.swift in Sources */,
+				4831BBC522A851BD00E73F6F /* TapFeature.swift in Sources */,
+				488A3AF322D5563E0077B7F3 /* DonationFormInfoPickUp.swift in Sources */,
+				53208B64222472C500F58E05 /* ViewControllerLogin.swift in Sources */,
+				488A3AF122D4EA6C0077B7F3 /* DonationFormInfo.swift in Sources */,
+				481BE8A0223FFC92006042F9 /* ExpandableQuestions.swift in Sources */,
+				53208B7A22247BB600F58E05 /* ViewControllerAboutUs.swift in Sources */,
+				484CCC0F22FD56F40040B64D /* ConfirmVolunteerSignUp.swift in Sources */,
+				4831BBCF22A8F14E00E73F6F /* ProfileViewController.swift in Sources */,
+				4833B8C722A8F7B200AF0A34 /* ConfirmDonation.swift in Sources */,
+				481BE89E223FFC78006042F9 /* ViewControllerDonate.swift in Sources */,
+				48E40DCD22FEADFC0020E333 /* ViewProfile.swift in Sources */,
+				481BE898223FFC0C006042F9 /* ViewControllerVolunteerFAQ.swift in Sources */,
+				4855A3B2226E6D6200BADDB8 /* Button.swift in Sources */,
+				53208B7622247B6500F58E05 /* ViewControllerHome.swift in Sources */,
+				53208B7822247B9900F58E05 /* ViewControllerProfile.swift in Sources */,
+				53208B62222472C500F58E05 /* AppDelegate.swift in Sources */,
+				4855A3B0226E6D4B00BADDB8 /* buttonClass.swift in Sources */,
+				48C2D116225A789A00DB373B /* ExpandableDonationItems.swift in Sources */,
+				480FB7C122C5311D00A46726 /* ShareFBViewController.swift in Sources */,
+				48C2D114225A774300DB373B /* DonationFormButtonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53208B65222472C500F58E05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53208B66222472C500F58E05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53208B6A222472C700F58E05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53208B6B222472C700F58E05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53208B6E222472C700F58E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53208B6F222472C700F58E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53208B71222472C700F58E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCAC066A9CE5B4B27AB71238 /* Pods-Caties-Closet-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RFWCSUD72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Caties-Closet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		53208B72222472C700F58E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127A504177D5F82FB4422987 /* Pods-Caties-Closet-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RFWCSUD72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = "Caties-Closet-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Caties-Closet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53208B59222472C500F58E05 /* Build configuration list for PBXProject "Caties-Closet-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53208B6E222472C700F58E05 /* Debug */,
+				53208B6F222472C700F58E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53208B70222472C700F58E05 /* Build configuration list for PBXNativeTarget "Caties-Closet-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53208B71222472C700F58E05 /* Debug */,
+				53208B72222472C700F58E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53208B56222472C500F58E05 /* Project object */;
+}
