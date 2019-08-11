@@ -39,6 +39,8 @@ class ViewControllerLogin: UIViewController {
     }
     
     
+    
+    
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
     
     @IBAction func goToSignUpPage(_ sender:UIButton) {
@@ -105,6 +107,33 @@ class ViewControllerLogin: UIViewController {
         //list of all usernames stored in allUsers
         var allUsers: [String] = tempAllUsers
         
+        var emailList = [String]()
+        // check for duplicated emails
+        for x in allUsers {
+            let ref = Database.database().reference()
+            ref.child("username/" + x + "/email").observeSingleEvent(of: .value) {
+                (snapshot) in
+                var individualEmail: String
+                individualEmail = snapshot.value as! String
+                emailList.append(individualEmail)
+                self.userDefaults.set(emailList, forKey:"emailList")
+            }
+        }
+
+        var tempAllEmail: [String]!
+        tempAllEmail = UserDefaults.standard.value(forKey: "emailList") as? [String]
+        let allEmail: [String] = tempAllEmail
+
+        for x in allEmail {
+            if (x == self.email){
+                
+                displayAlert(message: "This email has been used, please enter another email.")
+            }
+        }
+        
+        
+        
+        // check for duplicated usernames
         var inUsernameList = false
         for x in allUsers {
             if (username == x){
@@ -115,6 +144,7 @@ class ViewControllerLogin: UIViewController {
         if inUsernameList == false {
             allUsers.append(username)
         }
+        
         userDefaults.set(allUsers, forKey:"allUsers")
         
         // Store data with keys
@@ -126,6 +156,10 @@ class ViewControllerLogin: UIViewController {
         userDefaults.synchronize()
         
         
+
+        
+        
+
 
         
         performSegue(withIdentifier: "ConfirmSignUp", sender: self)
@@ -245,9 +279,8 @@ class ViewControllerLogin: UIViewController {
 
             for x in userDict.keys{
                 userList.append(x)
-                print(userList)
             }
-            
+            print(userList)
             self.userDefaults.set(userList, forKey:"allUsers")
             self.userDefaults.synchronize()
         })
