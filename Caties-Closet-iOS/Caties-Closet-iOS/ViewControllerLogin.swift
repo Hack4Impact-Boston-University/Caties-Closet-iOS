@@ -208,8 +208,24 @@ class ViewControllerLogin: UIViewController {
             self.displayAlert(message: "Incorrect username")
         }
         
+        
+        
+        let ref = Database.database().reference()
+        ref.child("username/" + username! + "/name").observeSingleEvent(of: .value) {
+            (snapshot) in
+            var fullname: String
+            fullname = snapshot.value as! String
+            print("fullname", fullname)
+            print(type(of: fullname))
+            UserDefaults.standard.set(fullname, forKey:"name")
+        }
+        
+        
         UserDefaults.standard.set(email, forKey:"okEmail")
 
+        UserDefaults.standard.set(username, forKey: "currentUser")
+        UserDefaults.standard.set(email, forKey:"email")
+        UserDefaults.standard.set(password, forKey:"password")
 
     }
     
@@ -253,7 +269,7 @@ class ViewControllerLogin: UIViewController {
         print(UserDefaults.standard.string(forKey: "currentUser")!)
         ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/email").observeSingleEvent(of: .value) {
             (snapshot) in
-            var okEmail = snapshot.value as? [String:Any]
+            var okEmail = snapshot.value as? String
             UserDefaults.standard.set(okEmail, forKey:"okEmail")
         }
         
@@ -281,6 +297,10 @@ class ViewControllerLogin: UIViewController {
         }
         else if (newPassword!.count < 6 ){
             displayAlert(message: "Password must be at least 6 characters long")
+            return
+        }
+        else if (newemail!.contains("@") == false || newemail!.contains(".") == false){
+            displayAlert(message: "Please enter a valid email.")
             return
         }
         

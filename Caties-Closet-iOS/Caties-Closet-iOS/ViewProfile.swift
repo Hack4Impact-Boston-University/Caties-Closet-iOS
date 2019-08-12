@@ -21,12 +21,12 @@ class ViewProfile: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let fullnameDB = UserDefaults.standard.string(forKey: "name")
+        
         let usernameDB = UserDefaults.standard.string(forKey: "currentUser")
         let emailDB = UserDefaults.standard.string(forKey: "email")
         let passwordDB = UserDefaults.standard.string(forKey: "password")
-        
-        
+        let fullnameDB = UserDefaults.standard.string(forKey: "name")
+
         fullName.text = fullnameDB
         username.text = usernameDB
         email.text = emailDB
