@@ -52,6 +52,34 @@ class ConfirmSignUpViewController: UIViewController {
             }
         }
         
+        
+        
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        var allUsers: [String] = tempAllUsers
+        
+        // update allUsers
+        allUsers.append(usernameDB)
+        userDefaults.set(allUsers, forKey:"allUsers")
+        
+        var emailList = [String]()
+        for x in allUsers {
+            let ref = Database.database().reference()
+            ref.child("username/" + x + "/email").observeSingleEvent(of: .value) {
+                (snapshot) in
+                var individualEmail: String
+                individualEmail = snapshot.value as! String
+                emailList.append(individualEmail)
+                self.userDefaults.set(emailList, forKey:"emailList")
+                return
+            }
+        }
+        //update emailList
+        var tempAllEmail: [String]!
+        tempAllEmail = UserDefaults.standard.value(forKey: "emailList") as? [String]
+        tempAllEmail.append(emailDB)
+        UserDefaults.standard.set(tempAllEmail, forKey:"emailList")
+
         performSegue(withIdentifier: "confirmSignUp", sender: self)
     }
     

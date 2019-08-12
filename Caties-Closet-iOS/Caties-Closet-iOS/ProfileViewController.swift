@@ -42,6 +42,7 @@ class ProfileViewController: UIViewController {
             } else {
                 // Account deleted.
             }
+            print("user deleted")
         }
         
         print("new email:",newemail)
@@ -50,6 +51,7 @@ class ProfileViewController: UIViewController {
             if (error != nil) {
                 self.displayAlert(message: "Could not update account")
             }
+            print("user added")
         }
         
         let ref = Database.database().reference()
@@ -57,6 +59,35 @@ class ProfileViewController: UIViewController {
         ref.child("username/" + (UserDefaults.standard.string(forKey: "currentUser")!) + "/email").setValue(UserDefaults.standard.string(forKey: "newemail"))
         
         
+        // update emailList
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        var allUsers: [String] = tempAllUsers
+        var emailList = [String]()
+        for x in allUsers {
+            let ref = Database.database().reference()
+            ref.child("username/" + x + "/email").observeSingleEvent(of: .value) {
+                (snapshot) in
+                var individualEmail: String
+                individualEmail = snapshot.value as! String
+                emailList.append(individualEmail)
+                UserDefaults.standard.set(emailList, forKey:"emailList")
+                return
+            }
+        }
+        let oldEmail = UserDefaults.standard.value(forKey: "email") as? String
+        var tempAllEmail: [String]!
+        tempAllEmail = UserDefaults.standard.value(forKey: "emailList") as? [String]
+        var allEmail: [String] = tempAllEmail
+        for (index, element) in allEmail.enumerated() {
+            if (element == oldEmail) {
+                allEmail.remove(at: index)
+            }
+        }
+        allEmail.append(newemail ?? "")
+        UserDefaults.standard.set(allEmail, forKey:"emailList")
+
+        UserDefaults.standard.set(confirmNewFullName.text, forKey:"name")
         UserDefaults.standard.set(newemail, forKey:"email")
         UserDefaults.standard.set(newPassword, forKey:"password")
         UserDefaults.standard.synchronize()
