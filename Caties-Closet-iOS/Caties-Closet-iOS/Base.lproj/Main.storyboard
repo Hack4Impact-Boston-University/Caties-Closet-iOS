@@ -71,7 +71,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImpactScreen" translatesAutoresizingMaskIntoConstraints="NO" id="P7J-1r-Sn3">
-                                <rect key="frame" x="9" y="164" width="356" height="366.00000000000011"/>
+                                <rect key="frame" x="9" y="164" width="356" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="356" id="5AI-h6-IcG"/>
                                     <constraint firstAttribute="height" constant="366" id="nGY-kK-P1U"/>
@@ -1044,7 +1044,7 @@ Anyone over the age of 13!</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WI1-H0-6e8" kind="showDetail" id="ayZ-De-4YM"/>
+                                    <segue destination="xrn-dR-38Q" kind="showDetail" id="2W6-MT-AdY"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Other Volunteers" translatesAutoresizingMaskIntoConstraints="NO" id="ILz-FJ-yG9">
@@ -2438,6 +2438,16 @@ Anyone over the age of 13!</string>
                                             <segue destination="4gc-DQ-Qzw" kind="showDetail" id="mCj-ho-8MD"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="lbs" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7d-E3-hf6">
+                                        <rect key="frame" x="309" y="747" width="37" height="23"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="6CS-T0-22u"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="txZ-8u-ddR" firstAttribute="top" secondItem="ADn-jh-94Y" secondAttribute="bottom" constant="126" id="049-VB-cIE"/>
@@ -2466,6 +2476,7 @@ Anyone over the age of 13!</string>
                                     <constraint firstItem="hqu-g5-2Ml" firstAttribute="top" secondItem="dbu-Ff-yzV" secondAttribute="bottom" constant="10" id="G3t-bO-rI3"/>
                                     <constraint firstItem="b99-SN-Wkd" firstAttribute="top" secondItem="UzB-Rb-bwT" secondAttribute="bottom" constant="8" symbolic="YES" id="GVb-Ww-HjD"/>
                                     <constraint firstAttribute="width" constant="375" id="Gbg-HB-gz7"/>
+                                    <constraint firstItem="V7d-E3-hf6" firstAttribute="top" secondItem="OSA-US-iOa" secondAttribute="top" constant="4" id="JCt-fe-FaW"/>
                                     <constraint firstItem="Epy-90-Y46" firstAttribute="leading" secondItem="DrI-oo-v8P" secondAttribute="leading" id="JZE-YG-zHb"/>
                                     <constraint firstItem="oXa-t0-TlE" firstAttribute="trailing" secondItem="Mag-Cl-0KR" secondAttribute="trailing" id="Jjd-YG-1RH"/>
                                     <constraint firstItem="fRe-7j-fyZ" firstAttribute="top" secondItem="Epy-90-Y46" secondAttribute="bottom" constant="63" id="Kwd-hP-3vC"/>
@@ -2506,6 +2517,7 @@ Anyone over the age of 13!</string>
                                     <constraint firstItem="NYQ-lW-CdW" firstAttribute="trailing" secondItem="hqu-g5-2Ml" secondAttribute="trailing" id="gzU-gF-XaT"/>
                                     <constraint firstAttribute="trailing" secondItem="Sxe-H6-rN9" secondAttribute="trailing" constant="4" id="hP2-4S-hkc"/>
                                     <constraint firstItem="txZ-8u-ddR" firstAttribute="top" secondItem="iCi-ZC-nEL" secondAttribute="bottom" constant="119" id="hr8-3B-rHL"/>
+                                    <constraint firstItem="V7d-E3-hf6" firstAttribute="leading" secondItem="OSA-US-iOa" secondAttribute="trailing" constant="4" id="jT2-ja-EnX"/>
                                     <constraint firstItem="iCi-ZC-nEL" firstAttribute="leading" secondItem="txZ-8u-ddR" secondAttribute="leading" id="jV3-9y-8k9"/>
                                     <constraint firstItem="6x2-IO-DgX" firstAttribute="centerY" secondItem="QbV-D2-vPA" secondAttribute="centerY" constant="-9" id="kCA-zt-kh5"/>
                                     <constraint firstItem="yLM-63-IAt" firstAttribute="top" secondItem="yWR-Zc-zdY" secondAttribute="bottom" constant="15" id="kMM-Hj-Toe"/>
@@ -2519,6 +2531,7 @@ Anyone over the age of 13!</string>
                                     <constraint firstItem="NYQ-lW-CdW" firstAttribute="top" secondItem="oXa-t0-TlE" secondAttribute="top" id="vaO-KV-O1s"/>
                                     <constraint firstItem="m26-Mm-hLo" firstAttribute="top" secondItem="yLM-63-IAt" secondAttribute="top" id="vd2-WT-HHp"/>
                                     <constraint firstItem="IrX-hN-yN1" firstAttribute="centerX" secondItem="rA8-gL-WDe" secondAttribute="centerX" constant="0.5" id="wk5-cN-17p"/>
+                                    <constraint firstAttribute="trailing" secondItem="V7d-E3-hf6" secondAttribute="trailing" constant="29" id="wm6-B4-xjS"/>
                                     <constraint firstItem="OSA-US-iOa" firstAttribute="leading" secondItem="txZ-8u-ddR" secondAttribute="trailing" constant="8" symbolic="YES" id="xRc-mq-e1V"/>
                                     <constraint firstAttribute="trailing" secondItem="hqu-g5-2Ml" secondAttribute="trailing" constant="24" id="yBh-bK-q0f"/>
                                     <constraint firstItem="yLM-63-IAt" firstAttribute="trailing" secondItem="ADn-jh-94Y" secondAttribute="trailing" id="yFT-80-a8W"/>
@@ -2651,7 +2664,7 @@ Anyone over the age of 13!</string>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="xrn-dR-38Q" customClass="AboutUsSwipeViewController" customModule="Caties_Closet_iOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVt-pj-zOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3348" y="848"/>
+            <point key="canvasLocation" x="4398" y="-644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HHz-vW-G6e">
@@ -2673,7 +2686,7 @@ Anyone over the age of 13!</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-xP-mUA">
-                                <rect key="frame" x="92" y="552" width="191" height="47"/>
+                                <rect key="frame" x="92" y="539" width="191" height="47"/>
                                 <color key="backgroundColor" red="0.36090935140000002" green="0.68937632739999999" blue="0.0066247710680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="191" id="Kqw-at-5g4"/>
@@ -2733,7 +2746,7 @@ We're proof compassion can change the world.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDE-6M-TsA">
-                                <rect key="frame" x="92" y="607" width="191" height="44"/>
+                                <rect key="frame" x="92" y="594" width="191" height="44"/>
                                 <color key="backgroundColor" red="0.7696502221" green="0.7696502221" blue="0.7696502221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="7Px-yQ-5YC"/>
@@ -2744,7 +2757,7 @@ We're proof compassion can change the world.
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hF4-LO-SMN" kind="showDetail" id="VlS-GJ-Rsh"/>
+                                    <segue destination="hF4-LO-SMN" kind="showDetail" id="F93-qH-nci"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2759,7 +2772,7 @@ We're proof compassion can change the world.
                             <constraint firstItem="SqP-KZ-qgi" firstAttribute="leading" secondItem="Hxu-qt-IvX" secondAttribute="leading" constant="72" id="J8l-EM-O4s"/>
                             <constraint firstItem="Sjw-Xf-Jyc" firstAttribute="top" secondItem="ps2-Kt-Q3e" secondAttribute="bottom" id="Jtg-Dl-dZA"/>
                             <constraint firstAttribute="trailing" secondItem="SqP-KZ-qgi" secondAttribute="trailing" constant="73" id="Kju-6Z-2tx"/>
-                            <constraint firstItem="WXD-xP-mUA" firstAttribute="top" secondItem="SqP-KZ-qgi" secondAttribute="bottom" constant="230" id="MvF-By-5Nh"/>
+                            <constraint firstItem="WXD-xP-mUA" firstAttribute="top" secondItem="SqP-KZ-qgi" secondAttribute="bottom" constant="217" id="MvF-By-5Nh"/>
                             <constraint firstAttribute="trailing" secondItem="WXD-xP-mUA" secondAttribute="trailing" constant="92" id="SOD-Sp-V0X"/>
                             <constraint firstAttribute="trailing" secondItem="qER-jK-Wsq" secondAttribute="trailing" constant="17" id="SaQ-yd-NLd"/>
                             <constraint firstItem="lkS-bo-qyG" firstAttribute="leading" secondItem="Hxu-qt-IvX" secondAttribute="leading" constant="242" id="b29-Vw-Wpz"/>
@@ -2770,13 +2783,13 @@ We're proof compassion can change the world.
                             <constraint firstAttribute="trailingMargin" secondItem="UDE-6M-TsA" secondAttribute="trailing" constant="76" id="dTA-Kd-aIg"/>
                             <constraint firstItem="SqP-KZ-qgi" firstAttribute="top" secondItem="lkS-bo-qyG" secondAttribute="bottom" constant="-8" id="e5l-Hg-Y2b"/>
                             <constraint firstItem="UDE-6M-TsA" firstAttribute="leading" secondItem="Hxu-qt-IvX" secondAttribute="leadingMargin" constant="76" id="g1h-FP-1Oi"/>
-                            <constraint firstItem="WXD-xP-mUA" firstAttribute="top" secondItem="SqP-KZ-qgi" secondAttribute="bottom" constant="230" id="ggE-Cw-thi"/>
+                            <constraint firstItem="WXD-xP-mUA" firstAttribute="top" secondItem="SqP-KZ-qgi" secondAttribute="bottom" constant="217" id="ggE-Cw-thi"/>
                             <constraint firstItem="qER-jK-Wsq" firstAttribute="leading" secondItem="Hxu-qt-IvX" secondAttribute="leading" constant="15" id="gsE-hG-luR"/>
                             <constraint firstItem="Sjw-Xf-Jyc" firstAttribute="trailing" secondItem="Hxu-qt-IvX" secondAttribute="trailing" id="hXp-ci-BWP"/>
                             <constraint firstItem="lkS-bo-qyG" firstAttribute="leading" secondItem="Hxu-qt-IvX" secondAttribute="leading" constant="242" id="iPF-CU-TR3"/>
                             <constraint firstItem="lkS-bo-qyG" firstAttribute="top" secondItem="ps2-Kt-Q3e" secondAttribute="bottom" constant="80" id="oXw-gD-6RE"/>
-                            <constraint firstItem="WXD-xP-mUA" firstAttribute="top" secondItem="SqP-KZ-qgi" secondAttribute="bottom" constant="230" id="pNM-SY-OtR"/>
-                            <constraint firstItem="oJn-Ci-qQQ" firstAttribute="top" secondItem="UDE-6M-TsA" secondAttribute="bottom" constant="16" id="qKf-6T-f7W"/>
+                            <constraint firstItem="WXD-xP-mUA" firstAttribute="top" secondItem="SqP-KZ-qgi" secondAttribute="bottom" constant="217" id="pNM-SY-OtR"/>
+                            <constraint firstItem="oJn-Ci-qQQ" firstAttribute="top" secondItem="UDE-6M-TsA" secondAttribute="bottom" constant="29" id="qKf-6T-f7W"/>
                             <constraint firstItem="SqP-KZ-qgi" firstAttribute="leading" secondItem="Hxu-qt-IvX" secondAttribute="leading" constant="72" id="udo-5s-udy"/>
                             <constraint firstAttribute="trailing" secondItem="lkS-bo-qyG" secondAttribute="trailing" constant="4" id="wHn-j1-1EC"/>
                         </constraints>
@@ -2884,7 +2897,7 @@ We're proof compassion can change the world.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsThird" translatesAutoresizingMaskIntoConstraints="NO" id="FUO-WO-kfs">
-                                <rect key="frame" x="22.5" y="127" width="330.00000000000023" height="292"/>
+                                <rect key="frame" x="22.5" y="127" width="330" height="292"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="292" id="STG-y2-jaE"/>
                                     <constraint firstAttribute="width" constant="330" id="sZQ-7U-tde"/>
@@ -2951,7 +2964,7 @@ We're proof compassion can change the world.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUsFourth" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-Yh-Ean">
-                                <rect key="frame" x="40.5" y="149" width="294" height="275.00000000000011"/>
+                                <rect key="frame" x="40.5" y="149" width="294" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="Ney-X1-ltg"/>
                                     <constraint firstAttribute="height" constant="275" id="bdB-YA-eiG"/>
@@ -3285,7 +3298,7 @@ We're proof compassion can change the world.
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WI1-H0-6e8" kind="showDetail" id="XKR-t1-Mqz"/>
+                                    <segue destination="xrn-dR-38Q" kind="showDetail" id="vLt-Ha-f59"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Share to invite your friends to join!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MY4-m3-OCx">
@@ -3595,13 +3608,13 @@ We're proof compassion can change the world.
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EaQ-TN-c0u"/>
-        <segue reference="ayZ-De-4YM"/>
+        <segue reference="vLt-Ha-f59"/>
         <segue reference="gRW-DT-Xlf"/>
         <segue reference="vo2-aF-J3X"/>
-        <segue reference="dDu-zS-yZF"/>
+        <segue reference="mCj-ho-8MD"/>
         <segue reference="D5R-NX-bNl"/>
-        <segue reference="RqE-bQ-N60"/>
-        <segue reference="Hu4-4g-wwl"/>
+        <segue reference="obz-2V-E5D"/>
+        <segue reference="F93-qH-nci"/>
         <segue reference="0nd-px-m50"/>
         <segue reference="Rch-8y-Zoh"/>
         <segue reference="MsM-pI-15Q"/>

@@ -39,6 +39,8 @@ class ViewControllerLogin: UIViewController {
     }
     
     
+    
+    
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
     
     @IBAction func goToSignUpPage(_ sender:UIButton) {
@@ -91,7 +93,7 @@ class ViewControllerLogin: UIViewController {
             displayAlert(message: "Password must be at least 6 characters long")
             return
         }
-        else if (email.contains("@") == false){
+        else if (email.contains("@") == false || email.contains(".") == false){
             displayAlert(message: "Please enter a valid email.")
             return
         }
@@ -105,17 +107,43 @@ class ViewControllerLogin: UIViewController {
         //list of all usernames stored in allUsers
         var allUsers: [String] = tempAllUsers
         
-        var inUsernameList = false
+        // check for duplicated emails
+        var emailList = [String]()
+        for x in allUsers {
+            if (x != username) {
+                let ref = Database.database().reference()
+                ref.child("username/" + x + "/email").observeSingleEvent(of: .value) {
+                    (snapshot) in
+                    var individualEmail: String
+                    individualEmail = snapshot.value as! String
+
+                    emailList.append(individualEmail)
+                    self.userDefaults.set(emailList, forKey:"emailList")
+                    return
+                }
+            }
+        }
+
+        var tempAllEmail: [String]!
+        tempAllEmail = UserDefaults.standard.value(forKey: "emailList") as? [String]
+        let allEmail: [String] = tempAllEmail
+
+        for x in allEmail {
+            if (x == self.email){
+                
+                displayAlert(message: "This email has been used, please enter another email.")
+            }
+        }
+        
+        
+        
+        // check for duplicated usernames
         for x in allUsers {
             if (username == x){
                 displayAlert(message: "This username has been used, please select another username.")
-                inUsernameList = true
             }
         }
-        if inUsernameList == false {
-            allUsers.append(username)
-        }
-        userDefaults.set(allUsers, forKey:"allUsers")
+
         
         // Store data with keys
         userDefaults.set(fullname, forKey:"name")
@@ -125,7 +153,8 @@ class ViewControllerLogin: UIViewController {
 
         userDefaults.synchronize()
         
-        
+        print("all email",allEmail)
+
 
         
         performSegue(withIdentifier: "ConfirmSignUp", sender: self)
@@ -156,8 +185,6 @@ class ViewControllerLogin: UIViewController {
             displayAlert(message: "Please enter your username, email, and password.")
         } else {
             for x in allUsers {
-                print(x)
-                print(username==x)
                 if (username == x) {
                     correctUsername = true
                     usernameDB = username ?? ""
@@ -180,6 +207,9 @@ class ViewControllerLogin: UIViewController {
         if (correctUsername == false){
             self.displayAlert(message: "Incorrect username")
         }
+        
+        UserDefaults.standard.set(email, forKey:"okEmail")
+
 
     }
     
@@ -196,6 +226,47 @@ class ViewControllerLogin: UIViewController {
         let newemail = newEmailField.text
         let newPassword = newPasswordField.text
         let confirmNewpassword = confirmNewPasswordField.text
+        
+        
+        // check for duplicated email
+        let tempAllUsers: [String]!
+        tempAllUsers = UserDefaults.standard.value(forKey: "allUsers") as? [String]
+        var allUsers: [String] = tempAllUsers
+        var emailList = [String]()
+        for x in allUsers {
+            let ref = Database.database().reference()
+            ref.child("username/" + x + "/email").observeSingleEvent(of: .value) {
+                (snapshot) in
+                var individualEmail: String
+                individualEmail = snapshot.value as! String
+                emailList.append(individualEmail)
+                self.userDefaults.set(emailList, forKey:"emailList")
+                return
+            }
+        }
+        var tempAllEmail: [String]!
+        tempAllEmail = UserDefaults.standard.value(forKey: "emailList") as? [String]
+        let allEmail: [String] = tempAllEmail
+        print("allEmail",allEmail)
+        
+        let ref = Database.database().reference()
+        print(UserDefaults.standard.string(forKey: "currentUser")!)
+        ref.child("username/" + UserDefaults.standard.string(forKey: "currentUser")! + "/email").observeSingleEvent(of: .value) {
+            (snapshot) in
+            var okEmail = snapshot.value as? [String:Any]
+            UserDefaults.standard.set(okEmail, forKey:"okEmail")
+        }
+        
+        let okemail = UserDefaults.standard.value(forKey: "okEmail") as? String
+        for x in allEmail {
+            print("okEmail",okemail!)
+            if (newemail != okemail!){
+                if  (x == newemail) {
+                    print("can't sign up email")
+                    displayAlert(message: "This email has been used, please enter another email.")
+                }
+            }
+        }
         
         // If incomplete fields exist
         if(newfullname == "" || newemail == "" || confirmNewpassword == "" || confirmNewpassword == "") {
@@ -223,8 +294,6 @@ class ViewControllerLogin: UIViewController {
         userDefaults.synchronize()
         
 
-        print("old email", UserDefaults.standard.string(forKey: "email"))
-
         performSegue(withIdentifier: "ConfirmEditProfile", sender: self)
     }
     
@@ -245,9 +314,8 @@ class ViewControllerLogin: UIViewController {
 
             for x in userDict.keys{
                 userList.append(x)
-                print(userList)
             }
-            
+            print(userList)
             self.userDefaults.set(userList, forKey:"allUsers")
             self.userDefaults.synchronize()
         })
