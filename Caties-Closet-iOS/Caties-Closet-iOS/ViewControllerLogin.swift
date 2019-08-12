@@ -209,15 +209,16 @@ class ViewControllerLogin: UIViewController {
         }
         
         
-        
-        let ref = Database.database().reference()
-        ref.child("username/" + username! + "/name").observeSingleEvent(of: .value) {
-            (snapshot) in
-            var fullname: String
-            fullname = snapshot.value as! String
-            print("fullname", fullname)
-            print(type(of: fullname))
-            UserDefaults.standard.set(fullname, forKey:"name")
+        if (correctUsername == true) {
+            let ref = Database.database().reference()
+            ref.child("username/" + username! + "/name").observeSingleEvent(of: .value) {
+                (snapshot) in
+                var fullname: String
+                fullname = snapshot.value as! String
+                print("fullname", fullname)
+                print(type(of: fullname))
+                UserDefaults.standard.set(fullname, forKey:"name")
+            }
         }
         
         
