@@ -44,6 +44,7 @@ class ConfirmDonation: UIViewController {
             self.userDefaults.set(totalBoxesDB, forKey:"totalBoxesDB")
         }
         
-        
+        UserDefaults.standard.set("", forKey:"full email")
+
     }
 }

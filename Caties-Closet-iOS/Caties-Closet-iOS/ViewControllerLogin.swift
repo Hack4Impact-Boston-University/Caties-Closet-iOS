@@ -191,42 +191,66 @@ class ViewControllerLogin: UIViewController {
                     userDefaults.set(username, forKey: "currentUser")
                     userDefaults.synchronize()
                     
-                    Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                        if( error != nil){
-                            self.displayAlert(message: "Incorrect email or password")
-                        } else {
-                            let firebaseID = Auth.auth().currentUser?.email
-                            self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
-                        }
-                    }
+                    
                     break
                 }
             }
-
+            
         }
         if (correctUsername == false){
             self.displayAlert(message: "Incorrect username")
         }
         
         
+        
+        UserDefaults.standard.set(email, forKey:"okEmail")
+        
+        UserDefaults.standard.set(username, forKey: "currentUser")
+        UserDefaults.standard.set(email, forKey:"email")
+        UserDefaults.standard.set(password, forKey:"password")
+        
+        let ref = Database.database().reference()
+        ref.child("username/" + username! + "/email").observeSingleEvent(of: .value) {
+            (snapshot) in
+            var fullemail: String
+            fullemail = snapshot.value as! String
+            UserDefaults.standard.set(fullemail, forKey:"full email")
+            print("full email", fullemail)
+        }
+        
         if (correctUsername == true) {
+            // check if it's corresponding email
             let ref = Database.database().reference()
+            
+            var checkemail: String
+            checkemail = UserDefaults.standard.string(forKey: "full email") ?? ""
+            
+            print("email",email)
+            print("checkemail",checkemail)
+            
+            if (email == checkemail) {
+                Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                    if( error != nil){
+                        print("error")
+                        self.displayAlert(message: "Incorrect email or password")
+                    } else {
+                        let firebaseID = Auth.auth().currentUser?.email
+                        self.performSegue(withIdentifier: "ConfirmLogIn", sender: self)
+                    }
+                }
+            }
+            else if (email != checkemail) {
+                displayAlert(message: "Please press Login again. If you are seeing this message more than once, please check for correct username, email, and password")
+            }
+            
             ref.child("username/" + username! + "/name").observeSingleEvent(of: .value) {
                 (snapshot) in
                 var fullname: String
                 fullname = snapshot.value as! String
-                print("fullname", fullname)
-                print(type(of: fullname))
                 UserDefaults.standard.set(fullname, forKey:"name")
             }
         }
         
-        
-        UserDefaults.standard.set(email, forKey:"okEmail")
-
-        UserDefaults.standard.set(username, forKey: "currentUser")
-        UserDefaults.standard.set(email, forKey:"email")
-        UserDefaults.standard.set(password, forKey:"password")
 
     }
     
@@ -341,6 +365,8 @@ class ViewControllerLogin: UIViewController {
             self.userDefaults.synchronize()
         })
         
+        UserDefaults.standard.set("", forKey:"full email")
+
     }
     
 
